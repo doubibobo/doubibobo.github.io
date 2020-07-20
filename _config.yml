@@ -21,7 +21,7 @@
 title: 大道之行
 email: doubibobolalala@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-  flag：每天阅读一篇论文
+  每天阅读一篇论文
 baseurl: "/blog" # the subpath of your site, e.g. /blog
 url: "https://doubibobo.top" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: doubibobo
