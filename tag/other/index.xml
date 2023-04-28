@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Other | Never-Ending Travel</title>
+    <link>http://resume.2oil.top/tag/other/</link>
+      <atom:link href="http://resume.2oil.top/tag/other/index.xml" rel="self" type="application/rss+xml" />
+    <description>Other</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© 2021-2023. Never-Ending Travel. All Rights Reserved. [鲁ICP备2021007223号-1](https://beian.miit.gov.cn/)</copyright><lastBuildDate>Wed, 27 Jun 2018 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>http://resume.2oil.top/media/icon_hud0ce531716296da633c567fb13fa2911_442_512x512_fill_lanczos_center_2.png</url>
+      <title>Other</title>
+      <link>http://resume.2oil.top/tag/other/</link>
+    </image>
+    
+    <item>
+      <title>Ext2 文件系统仿真</title>
+      <link>http://resume.2oil.top/project/ext2-fs/</link>
+      <pubDate>Wed, 27 Jun 2018 00:00:00 +0000</pubDate>
+      <guid>http://resume.2oil.top/project/ext2-fs/</guid>
+      <description>&lt;p&gt;该项目模仿早期 Linux 版本所采用的的 Ext2 文件系统，通过 8.1M 的文件模拟磁盘空间，实现文件系统 对磁盘管理、内存管理的仿真。&lt;/p&gt;
+&lt;p&gt;磁盘管理中将每一个物理块定义为 1K 大小，逻辑块定义为 1K 大小。按照 Ext2 文件系统的格式，将系 统划分为 8 个组，每个组大小为 1024K，又包含超级块、组描述符、块位图、逻辑位图、内存索引节点和 数据块。按照创建文件、创建目录、删除文件、删除目录、打开文件、读文件、写文件的算法分别实现相关 函数。&lt;/p&gt;
+&lt;p&gt;内存管理中建立内存索引节点、系统打开文件表、用户打开文件表、进程数据结构。模拟进程操作文件时， 通过内存索引节点信息，调用底层文件操作函数，依次填充系统打开文件表，用户打开文件表来实现进程 对文件的操作。&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>单周期 CPU 的设计与实现</title>
+      <link>http://resume.2oil.top/project/single-cpu/</link>
+      <pubDate>Tue, 27 Jun 2017 00:00:00 +0000</pubDate>
+      <guid>http://resume.2oil.top/project/single-cpu/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>基于 Java 的 FTP 项目开发</title>
+      <link>http://resume.2oil.top/project/java-ftp/</link>
+      <pubDate>Thu, 27 Apr 2017 00:00:00 +0000</pubDate>
+      <guid>http://resume.2oil.top/project/java-ftp/</guid>
+      <description>&lt;p&gt;作为组长，组织三位同学分析项目需求，设计项目架构，明确 FTP 原理，统筹整个项目。前期，负责实现支持 ASCII 传输、二进制传输，主动方式传输、被动方式传输，断点续传功能的FTP客户端逻辑代码。后期，负责测试并撰写测试分析报告。&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

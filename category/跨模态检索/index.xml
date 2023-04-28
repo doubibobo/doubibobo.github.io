@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>跨模态检索 | Never-Ending Travel</title>
+    <link>http://resume.2oil.top/category/%E8%B7%A8%E6%A8%A1%E6%80%81%E6%A3%80%E7%B4%A2/</link>
+      <atom:link href="http://resume.2oil.top/category/%E8%B7%A8%E6%A8%A1%E6%80%81%E6%A3%80%E7%B4%A2/index.xml" rel="self" type="application/rss+xml" />
+    <description>跨模态检索</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© 2021-2023. Never-Ending Travel. All Rights Reserved. [鲁ICP备2021007223号-1](https://beian.miit.gov.cn/)</copyright><lastBuildDate>Mon, 15 Aug 2022 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>http://resume.2oil.top/media/icon_hud0ce531716296da633c567fb13fa2911_442_512x512_fill_lanczos_center_2.png</url>
+      <title>跨模态检索</title>
+      <link>http://resume.2oil.top/category/%E8%B7%A8%E6%A8%A1%E6%80%81%E6%A3%80%E7%B4%A2/</link>
+    </image>
+    
+    <item>
+      <title>多模态表征学习（跨模态检索——视频描述生成）</title>
+      <link>http://resume.2oil.top/post/2022-08-15/</link>
+      <pubDate>Mon, 15 Aug 2022 00:00:00 +0000</pubDate>
+      <guid>http://resume.2oil.top/post/2022-08-15/</guid>
+      <description>&lt;h5 id=&#34;1-motivation&#34;&gt;1. Motivation&lt;/h5&gt;
+&lt;p&gt;作者认为：很多视频-文本任务都蕴含着不同粒度的信息，如：视频帧-单词、片段-句子、视频-段落，每个都包含了不同粒度的语义信息。&lt;/p&gt;
+&lt;p&gt;本文解决的问题是：1）如何有效利用层次化的信息；2）如何建模不同粒度、不同模态数据之间的信息交互。&lt;/p&gt;
+&lt;p&gt;提出的COOT模型包含三个主要部分：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;一个注意力感知聚合层，用于local temporal context (intra-level, within a clip)；&lt;/li&gt;
+&lt;li&gt;一个上下文transformer，用于学习低级语义和高级语义的交互(inter-level, clip-video/sentence-paragraph)；&lt;/li&gt;
+&lt;li&gt;用于跨模态交互的循环一致性损失 (cycle-consistency loss)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Abstract: Many real-world video-text tasks involve different levels of granularity, such as frames and words, clip and sentences or videos and paragraphs, each with distinct semantics. In this paper, we propose a Cooperative hierarchical Transformer (COOT) to leverage this hierarchy information and model the interactions between different levels of granularity and different modalities. The method consists of three major components: an attention-aware feature aggregation layer, which leverages the local temporal context (intra-level, e.g., within a clip), a contextual transformer to learn the interactions between low-level and high-level semantics (inter-level, e.g. clip-video, sentence-paragraph), and a cross-modal cycle-consistency loss to connect video and text. The resulting method compares favorably to the state of the art on several benchmarks while having few parameters. All code is available open-source at &lt;a href=&#34;https://github.com/gingsi/coot-videotext&#34;&gt;https://github.com/gingsi/coot-videotext&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h5 id=&#34;2-model&#34;&gt;2. Model&lt;/h5&gt;
+&lt;p&gt;&lt;img src=&#34;./figures/model_architecture.png&#34; alt=&#34;avator&#34;&gt;
+&lt;img src=&#34;./figures/figure2-model.png&#34; alt=&#34;avator&#34;&gt;&lt;/p&gt;
+&lt;h5 id=&#34;3-cross-modal-cycle-consistency-loss-跨模态循环一致性&#34;&gt;3. Cross-Modal Cycle Consistency Loss (跨模态循环一致性)&lt;/h5&gt;
+&lt;p&gt;&lt;img src=&#34;./figures/figure3-model.png&#34; alt=&#34;avator&#34;&gt;
+循环意味着闭环，该损失用于学习跨模态数据的语义对齐。其基本假设为：“A pair of clip and sentence will be identiﬁed as semantically aligned if they are nearest neighbors in the learned common spaces.”。换言之：将clip和sentence向量映射到common sapce中，则这两个向量是最相邻的。&lt;/p&gt;
+&lt;p&gt;定义clip序列：$[{\theta_{i}}]_{i=1}^{n} = [\theta_{1}, \cdots, \theta_{n}]$&lt;/p&gt;
+&lt;p&gt;定义sentence序列：$[{\delta_{i}}]_{i=1}^{m} = [\delta{1}, \cdots, \delta{m}]$&lt;/p&gt;
+&lt;p&gt;给定sentence ${\delta_{i}}$，可以计算出最近邻 (soft nearest neighbor):
+$$
+\bar{\theta_{\delta_{i}}}=\sum_{j=1}^{n}\alpha_{j}\theta_{j},\&lt;br&gt;
+$$
+其中，$\alpha_{j}$是clip $\theta_{j}$对sentence $\delta_{i}$的相似度分数：
+$$
+\alpha_{j} = \frac{\exp(-{||\delta_{i}-\theta_{j}||^2})}{\sum_{k=1}^n{\exp(-{||\delta_{i}-\theta_{k}||}^2)}}
+$$&lt;/p&gt;
+&lt;p&gt;给定$\bar{\theta_{\delta_{i}}}$，反过来可以计算soft location：
+$$
+\mu = \sum_{j=1}^{m}\beta_{j}j
+$$
+其中，$\beta_{j}$是sentence $\delta_{k}$对于clip向量$\bar{\theta_{\delta_{i}}}$的相似度分数：
+$$
+\beta_{j} = \frac{\exp(-{||\bar{\theta_{\delta_{i}}}-\delta_{j}||}^2)}{\sum_{k=1}^{m}\exp(-{||\bar{\theta_{\delta_{i}}}-\delta_{k}||}^2)}
+$$
+&lt;font color=&#34;#dd0000&#34;&gt;正反向操作后，当且仅当$\mu=i$时，才是跨模态循环一致的。原文为：The sentence embedding $\delta_{i}$ is semantically cycle consistent if and only if it cycles back to the original location, i.e., $i=\mu$。&lt;/font&gt;&lt;/p&gt;
+&lt;p&gt;由此，可得跨模态循环一致性损失$l_{CMC}$
+$$
+l_{CMC} = ||i-\mu||^2
+$$&lt;/p&gt;
+&lt;p&gt;&lt;font color=&#34;#dd0000&#34;&gt;总结：$l_{CMC}$从多模态语义对齐的基本概念出发，通过$A\rightarrow B, B\rightarrow A$的循环映射来增强两个模态的一致性（进行多模态语义对齐）。其处理对象为序列长度不一致的sentences和clips对，是非显式对齐的方法，感觉可以用在之后的工作中。&lt;/font&gt;&lt;/p&gt;
+&lt;h5 id=&#34;4-result&#34;&gt;4. Result&lt;/h5&gt;
+&lt;p&gt;&lt;strong&gt;注意：下列图片中$R@N$指标表示top N结果的召回率。&lt;/strong&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://pelhans.com/2019/04/08/deep_learning-note0/#rn&#34;&gt;http://pelhans.com/2019/04/08/deep_learning-note0/#rn&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://blog.csdn.net/hei653779919/article/details/105932096&#34;&gt;https://blog.csdn.net/hei653779919/article/details/105932096&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;img src=&#34;./figures/table1_result.png&#34; alt=&#34;avator&#34;&gt;
+&lt;img src=&#34;./figures/table2_result.png&#34; alt=&#34;avator&#34;&gt;
+&lt;img src=&#34;./figures/table3_result.png&#34; alt=&#34;avator&#34;&gt;
+&lt;img src=&#34;./figures/table4_result.png&#34; alt=&#34;avator&#34;&gt;
+&lt;img src=&#34;./figures/table5_result.png&#34; alt=&#34;avator&#34;&gt;
+&lt;img src=&#34;./figures/table6_result.png&#34; alt=&#34;avator&#34;&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

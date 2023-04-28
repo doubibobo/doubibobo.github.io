@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>TFN | Never-Ending Travel</title>
+    <link>http://resume.2oil.top/tag/tfn/</link>
+      <atom:link href="http://resume.2oil.top/tag/tfn/index.xml" rel="self" type="application/rss+xml" />
+    <description>TFN</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© 2021-2023. Never-Ending Travel. All Rights Reserved. [鲁ICP备2021007223号-1](https://beian.miit.gov.cn/)</copyright><lastBuildDate>Thu, 16 Jul 2020 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>http://resume.2oil.top/media/icon_hud0ce531716296da633c567fb13fa2911_442_512x512_fill_lanczos_center_2.png</url>
+      <title>TFN</title>
+      <link>http://resume.2oil.top/tag/tfn/</link>
+    </image>
+    
+    <item>
+      <title>论文阅读——多模态情感分析（一）</title>
+      <link>http://resume.2oil.top/post/2020-07-16/</link>
+      <pubDate>Thu, 16 Jul 2020 00:00:00 +0000</pubDate>
+      <guid>http://resume.2oil.top/post/2020-07-16/</guid>
+      <description>&lt;h3 id=&#34;__文章一memory-fusion-network-for-multi-view-sequential-learningzadeh2018__&#34;&gt;&lt;strong&gt;文章一：Memory Fusion Network for Multi-view Sequential Learning[@Zadeh2018]&lt;/strong&gt;&lt;/h3&gt;
+&lt;blockquote&gt;
+&lt;p&gt;2018年AAAI会议文章，主要工作是构造了针对多模态数据的MFN&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h4 id=&#34;__basic-concepts__&#34;&gt;&lt;strong&gt;Basic concepts&lt;/strong&gt;&lt;/h4&gt;
+&lt;p&gt;多模态的序列学习包括两个过程&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;view-specific interactions&lt;/strong&gt;&lt;/em&gt; that handle only one view&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;cross-view interactions&lt;/strong&gt;&lt;/em&gt; which are defined across different views and need to handle multi-views&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;so, the modeling of view-specific interactions and cross-view interactions is the &lt;em&gt;&lt;strong&gt;core question&lt;/strong&gt;&lt;/em&gt; of multi-view sequential learning[@Zadeh2018]&lt;/p&gt;
+&lt;p&gt;文章将多模态学习分为三类，基本思路是将不同模态下的特征向量映射到同一个特征子空间&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;the first category of models have relied on concatenation of all multiple views into a single view to simplify the learning setting&lt;/li&gt;
+&lt;/ol&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;思路：&lt;strong&gt;通过将不同模态映射到某个单一模态来获得&lt;/strong&gt;input层次&lt;/strong&gt;的级联，再送入神经网络进行学习，得到特征向量&lt;br&gt;
+**问题：**简单的级联忽视了不同模态的数据本来就有专属特征&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ol start=&#34;2&#34;&gt;
+&lt;li&gt;the second category of models introduce multi-view variants to the structured learning approaches of the first category&lt;/li&gt;
+&lt;/ol&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;思路：&lt;strong&gt;对第一种的改进，单独学习每个模态的特征向量，是&lt;/strong&gt;特征层次&lt;/strong&gt;上的级联&lt;br&gt;
+&lt;strong&gt;问题：&lt;/strong&gt;  &lt;em&gt;特征向量的级联&lt;/em&gt;，如$${v}, {a}, {l} -&amp;gt; {v, a, l}$$并没有做到真正的数据融合&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ol start=&#34;3&#34;&gt;
+&lt;li&gt;the third category of models rely on collapsing the time dimension from sequences by learning a temporal representation for each of the different views.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;思路：&lt;/strong&gt; 按照时间维度融合多模态的数据，融合后的特征向量是几个模态的平均，是&lt;strong&gt;特征层次&lt;/strong&gt;上的级联，是&lt;em&gt;modality fusion&lt;/em&gt;，或者通过voting的方式获取结果&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;my question: I don&amp;rsquo;t think that combining models by voting is a fusion method which should do fusion before generating decision, but the author classified it to the thrid category.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;问题：&lt;/strong&gt; 平均的方式掩盖了不同模态之间的差异性&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h4 id=&#34;__motivation__&#34;&gt;&lt;strong&gt;Motivation&lt;/strong&gt;&lt;/h4&gt;
+&lt;h4 id=&#34;__innovation__&#34;&gt;&lt;strong&gt;Innovation&lt;/strong&gt;&lt;/h4&gt;
+&lt;h4 id=&#34;__datasets__&#34;&gt;&lt;strong&gt;DataSets&lt;/strong&gt;&lt;/h4&gt;
+&lt;p&gt;Memory Fusion Network (MFN) 由三部分构成：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;the Systems of LSTMs for view-specific interactions&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;a special attention mechanism for cross-view interactions(DMAN)&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Multi-view Gated Memory for summarization&lt;/strong&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;文章二tensor-fusion-network-for-multimodal-sentiment-analysis&#34;&gt;文章二：Tensor Fusion Network for Multimodal Sentiment Analysis.&lt;/h3&gt;
+&lt;p&gt;这是普通的文字&lt;/p&gt;
+&lt;h4 id=&#34;论文笔记前传&#34;&gt;论文笔记前传&lt;/h4&gt;
+&lt;p&gt;&lt;img src=&#34;images/LSTM-constructor.jpeg&#34; alt=&#34;LSTM结构单元示意图&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;images/tfn.png&#34; alt=&#34;结构一&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;images/mfn.png&#34; alt=&#34;结构二&#34;&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

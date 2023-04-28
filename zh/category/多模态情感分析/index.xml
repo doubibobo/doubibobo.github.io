@@ -1,0 +1,427 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>多模态情感分析 | 大道之行</title>
+    <link>http://resume.2oil.top/zh/category/%E5%A4%9A%E6%A8%A1%E6%80%81%E6%83%85%E6%84%9F%E5%88%86%E6%9E%90/</link>
+      <atom:link href="http://resume.2oil.top/zh/category/%E5%A4%9A%E6%A8%A1%E6%80%81%E6%83%85%E6%84%9F%E5%88%86%E6%9E%90/index.xml" rel="self" type="application/rss+xml" />
+    <description>多模态情感分析</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>zh-Hans</language><copyright>© 2021-2023 深度学习两滴油 版权所有. 鲁ICP备2021007223号-1 鲁公网安备37132702371387号
+  </copyright><lastBuildDate>Tue, 23 Aug 2022 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>http://resume.2oil.top/media/icon_hud0ce531716296da633c567fb13fa2911_442_512x512_fill_lanczos_center_2.png</url>
+      <title>多模态情感分析</title>
+      <link>http://resume.2oil.top/zh/category/%E5%A4%9A%E6%A8%A1%E6%80%81%E6%83%85%E6%84%9F%E5%88%86%E6%9E%90/</link>
+    </image>
+    
+    <item>
+      <title>论文阅读——ERC任务综述</title>
+      <link>http://resume.2oil.top/zh/post/2022-08-23/</link>
+      <pubDate>Tue, 23 Aug 2022 00:00:00 +0000</pubDate>
+      <guid>http://resume.2oil.top/zh/post/2022-08-23/</guid>
+      <description>&lt;!-- ##### 1. MMGCN: Multimodal Fusion via Deep Graph Convolution Network for Emotion Recognition in Conversation
+&gt; 作者单位: 中国人民大学 金琴团队
+&gt; [论文链接](https://aclanthology.org/2021.acl-long.440.pdf)
+
+&gt; Abstract: Emotion recognition in conversation (ERC) is a crucial component in affective dialogue systems, which helps the system understand users’ emotions and generate empathetic re- sponses. However, most works focus on mod- eling speaker and contextual information pri- marily on the textual modality or simply lever- aging multimodal information through fea- ture concatenation. In order to explore a more effective way of utilizing both multi- modal and long-distance contextual informa- tion, we propose a new model based on mul- timodal fused graph convolutional network, MMGCN, in this work. MMGCN can not only make use of multimodal dependencies effec- tively, but also leverage speaker information to model inter-speaker and intra-speaker de- pendency. We evaluate our proposed model on two public benchmark datasets, IEMOCAP and MELD, and the results prove the effec- tiveness of MMGCN, which outperforms other SOTA methods by a significant margin under the multimodal conversation setting. --&gt;
+&lt;h4 id=&#34;1-erc任务定义应用场景关键挑战&#34;&gt;1. ERC任务定义、应用场景、关键挑战&lt;/h4&gt;
+&lt;p&gt;ERC任务是情感对话系统的重要组成部分，旨在自动识别并跟踪对话期间说话者的情绪状态，可广泛用于电子医疗服务、智能客服等众多人机交互领域。其关键技术挑战包括：1）如何对conversation的基本组成单元utterance进行上下文建模；2）如何利用speaker信息；3）如何获取并利用conversation的topic信息（针对conversation中topic变化的情形）；4）如何利用其它模态的信息，如视觉/听觉模态等。&lt;/p&gt;
+&lt;h4 id=&#34;2-常用数据集&#34;&gt;2. 常用数据集&lt;/h4&gt;
+&lt;p&gt;MELD/IEMOCAP是两个常用的多模态ERC数据集，其统计信息如下所示：&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th style=&#34;text-align:center&#34;&gt;数据集&lt;/th&gt;
+&lt;th style=&#34;text-align:center&#34;&gt;conversation (Train/Valid/Test)&lt;/th&gt;
+&lt;th style=&#34;text-align:center&#34;&gt;utterance (Train/Valid/Test)&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;MELD&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;1038/114/280&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;9989/1109/2610 (13708)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;IEMOCAP&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;100/20/31&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;4810/1000/1623 (7433)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;注意：不同论文列出的样本数并不相同（如ACL2021的MMGCN、CVPR2022的M2FNet、ICASSP2022的CKE-Net，需要根据数据集实际的处理情况进行更改。&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;conversation中utterance个数统计&lt;/em&gt;&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th style=&#34;text-align:center&#34;&gt;数据集&lt;/th&gt;
+&lt;th style=&#34;text-align:center&#34;&gt;Max&lt;/th&gt;
+&lt;th style=&#34;text-align:center&#34;&gt;Min&lt;/th&gt;
+&lt;th style=&#34;text-align:center&#34;&gt;Mean&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;MELD&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;24&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;1&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;9.62&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;IEMOCAP&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;&lt;em&gt;conversation中文本模态的长度统计&lt;/em&gt;&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th style=&#34;text-align:center&#34;&gt;数据集&lt;/th&gt;
+&lt;th style=&#34;text-align:center&#34;&gt;Max&lt;/th&gt;
+&lt;th style=&#34;text-align:center&#34;&gt;Min&lt;/th&gt;
+&lt;th style=&#34;text-align:center&#34;&gt;Mean&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;MELD&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;321&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;1&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;77.33&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;IEMOCAP&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;MELD数据集：包含文本、视觉、听觉三种模态的高质量对齐数据，包含304个不同的speakers，每个conversation都包含三个及三个以上的speakers。所有的utterance都标注了七类emotion (anger, disgust, fear, joy, neutral, sadness, and surprise)和三类sentiment (neutral, positive, and negative)标签。&lt;strong&gt;原始数据集已包含Valid和Test。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;效果排行榜：https://paperswithcode.com/sota/emotion-recognition-in-conversation-on-meld&lt;/p&gt;
+&lt;p&gt;IEMOCAP数据集：包含文本、视觉、听觉三种模态的近12小时two-way conversations数据，包含10个speakers。所有的utterance都标注了六类emotion (happy, sad, neutral, angry, excited, and frustrated)标签。&lt;strong&gt;原始数据集无Valid，CVPR2022的M2FNet是从Train集合中随机选取10%作为Valid。&lt;/strong&gt;&lt;/p&gt;
+&lt;font color=&#34;#dd0000&#34;&gt;
+Q1: 原始数据集没有给出conversation标签，而ERC任务又是针对对话的情绪识别，应如何理解？先前论文如何处理？
+&lt;p&gt;A1: ERC任务的性能评价应落脚到utterances。与一般ER不同的是，ERC需要更多地考虑utterance的上下文场景。比如MMGCN训练时的输入就是batch (16) 个conversations。
+&lt;/font&gt;&lt;/p&gt;
+&lt;h4 id=&#34;3-评价指标&#34;&gt;3. 评价指标&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;CVPR2022的M2FNet: accuracy / weighted average F1 score&lt;/li&gt;
+&lt;li&gt;ICASSP2022的CKE-Net: weighted F1 score&lt;/li&gt;
+&lt;li&gt;ACL2021的MMGCN: weighted accuracy / weighted average F1 score&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;4-特征提取&#34;&gt;4. 特征提取&lt;/h4&gt;
+&lt;p&gt;注意：原始数据集没有提供统一的特征，不同论文的处理方式不一致。&lt;font color=&#34;#dd0000&#34;&gt;这里就存在问题，论文指标高并不一定是模型好，也可能是特征好。&lt;/font&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;CVPR2022的M2FNet: 文本模态使用RoBERTa，视觉/听觉模态使用ResNet18，visual extractor在CASIA webface database上训练的，audio extractor是从相应音频信号获得的梅尔频谱上训练的。作者还构建了一个用于特征提取模型训练的损失函数（综合边际三元组$L_{AMT}$、协方差$L_{Cov}$和方差$L_{Var}$的损失）。表示为：$L_{FE}={\lambda_1}{L_{AMT}} + {\lambda_2}{L_{Cov}} + {\lambda_3}{L_{Var}}$&lt;/li&gt;
+&lt;li&gt;ICASSP2022的CKE-Net: 无详细介绍。&lt;/li&gt;
+&lt;li&gt;ACL2021的MMGCN: 文本模态采用TextCNN，视觉模态使用在FER+数据集上微调的DenseNet，听觉模态采用OpenSmile toolkit with IS10。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&#34;./figures/M2FNet_01.png&#34; alt=&#34;avator&#34;&gt;&lt;/p&gt;
+&lt;h4 id=&#34;5-相关工作&#34;&gt;5. 相关工作&lt;/h4&gt;
+&lt;h5 id=&#34;51-mmgcn-acl2021-multimodal-fusion-via-deep-graph-convolution-network-for-emotion-recognition-in-conversation&#34;&gt;5.1 MMGCN (ACL2021, Multimodal Fusion via Deep Graph Convolution Network for Emotion Recognition in Conversation)&lt;/h5&gt;
+&lt;blockquote&gt;
+&lt;p&gt;作者单位: 中国人民大学 金琴团队
+&lt;a href=&#34;https://aclanthology.org/2021.acl-long.440.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;论文链接&lt;/a&gt;&lt;br&gt;
+Abstract: Emotion recognition in conversation (ERC) is a crucial component in affective dialogue systems, which helps the system understand users’ emotions and generate empathetic re- sponses. However, most works focus on mod- eling speaker and contextual information pri- marily on the textual modality or simply lever- aging multimodal information through fea- ture concatenation. In order to explore a more effective way of utilizing both multi- modal and long-distance contextual informa- tion, we propose a new model based on mul- timodal fused graph convolutional network, MMGCN, in this work. MMGCN can not only make use of multimodal dependencies effec- tively, but also leverage speaker information to model inter-speaker and intra-speaker de- pendency. We evaluate our proposed model on two public benchmark datasets, IEMOCAP and MELD, and the results prove the effec- tiveness of MMGCN, which outperforms other SOTA methods by a significant margin under the multimodal conversation setting.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;创新点：提出一种多模态融合图卷积网络，在多模态融合的同时捕获长距离上下文信息。&lt;/p&gt;
+&lt;p&gt;图卷积公式：&lt;/p&gt;
+&lt;p&gt;$\widetilde{\mathcal{P}}=\widetilde{\mathcal{D}}^{-1/2}\widetilde{\mathcal{A}}\widetilde{\mathcal{D}}^{-1/2}={(\mathcal{D}+\mathcal{L})}^{-1/2}{(\mathcal{A}+\mathcal{L})}{(\mathcal{D}+\mathcal{L})}^{-1/2}$&lt;/p&gt;
+&lt;p&gt;$\mathcal{H}^{(l+1)}=\sigma({({(1-\alpha)\widetilde{\mathcal{P}}\mathcal{H}^{(l)} + \alpha\mathcal{H}^{(0)}})}{({(1-\beta^{l})\mathcal{L}+\beta^{(l)}\mathcal{W}^{(l)}})})$&lt;/p&gt;
+&lt;p&gt;$\beta^{(l)}=\log{(\frac{\eta}{l} + 1)}$&lt;/p&gt;
+&lt;p&gt;$\mathcal{L}$是恒等映射 (identify mapping)，是一种残差机制&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>论文阅读——多模态情感分析（三）</title>
+      <link>http://resume.2oil.top/zh/post/2022-07-04/</link>
+      <pubDate>Mon, 04 Jul 2022 00:00:00 +0000</pubDate>
+      <guid>http://resume.2oil.top/zh/post/2022-07-04/</guid>
+      <description>&lt;p&gt;[TOC]&lt;/p&gt;
+&lt;h5 id=&#34;icassp-2022语音情感分析论文列表icassp2022_paper_list&#34;&gt;&lt;a href=&#34;#icassp2022_paper_list&#34;&gt;ICASSP 2022语音情感分析论文列表&lt;/a&gt;&lt;/h5&gt;
+&lt;ul&gt;
+&lt;li&gt;Representation Learning Through Cross-modal Conditional Teacher-student Training For Speech Emotion Recognition, Amazon AWS AI&lt;/li&gt;
+&lt;li&gt;Speech Emotion Recognition Using Self-supervised Features, IBM Research AI&lt;/li&gt;
+&lt;li&gt;Multi-stage Graph Representation Learning For Dialogue-level Speech Emotion Recognition, 天津大学&lt;/li&gt;
+&lt;li&gt;Frontend Attributes Disentanglement For Speech Emotion Recognition, 中国科学技术大学, iFLYTEK&lt;/li&gt;
+&lt;li&gt;Neural Architecture Search For Speech Emotion Recognition, 香港中文大学&lt;/li&gt;
+&lt;li&gt;Climate and Weather: Inspecting Depression Detection Via Emotion Recognition, 剑桥大学&lt;/li&gt;
+&lt;li&gt;A Commonsense Knowledge Enhanced Network with Retrospective Loss for Emotion Recognition in Spoken Dialog, 哈工大&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h6 id=&#34;1-representation-learning-through-cross-modal-conditional-teacher-student-training-for-speech-emotion-recognitionpaper1&#34;&gt;&lt;a href=&#34;#paper1&#34;&gt;1. Representation Learning Through Cross-modal Conditional Teacher-student Training For Speech Emotion Recognition&lt;/a&gt;&lt;/h6&gt;
+&lt;blockquote&gt;
+&lt;p&gt;作者单位: Amazon AWS AI;
+&lt;a href=&#34;https://ieeexplore.ieee.org/document/9747754&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;论文链接&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;  虽然文本和语音的大规模预训练模型可以减少对大规模数据集的需求，但是如何在emotion recognition任务中使用基于预训练模型的representation还尚在研究。本文的研究表明：1）top-performing representations在emotion recognition中的主要差异在于valence (V维)，而activation (A维)和dominance (D维)的差异不大；2）在valence预测中，即使最优的HUBERT representation也弱于text-speech representation。&lt;/p&gt;
+&lt;p&gt;  本文通过condition teacher-Student training的方式来向speech representation融入lexical information。实验用到的数据集包括&lt;strong&gt;MSP-Podcast corpus&lt;/strong&gt;和&lt;strong&gt;IEMOCAP&lt;/strong&gt;，concordance correlation coefficient (CCC)指标在audio-only场景下达到了SOTA的效果。
+&lt;img src=&#34;./figures/iShot_2022-07-04_20.36.11.png&#34; alt=&#34;avator&#34;&gt;
+&lt;img src=&#34;./figures/iShot_2022-07-04_20.36.38.png&#34; alt=&#34;avator&#34;&gt;
+&lt;img src=&#34;./figures/iShot_2022-07-04_20.37.04.png&#34; alt=&#34;avator&#34;&gt;&lt;/p&gt;
+&lt;h6 id=&#34;2-speech-emotion-recognition-using-self-supervised-featurespaper2&#34;&gt;&lt;a href=&#34;#paper2&#34;&gt;2. Speech Emotion Recognition Using Self-supervised Features&lt;/a&gt;&lt;/h6&gt;
+&lt;blockquote&gt;
+&lt;p&gt;作者单位: IBM Research AI;
+&lt;a href=&#34;https://ieeexplore.ieee.org/document/9747870&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;论文链接&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;  本文介绍了一个模块化的端到端(E2E) SER系统。该系统基于一种上下游架构范式，可以轻松使用/集成各种自监督预训练模块。&lt;font color=&#34;#dd0000&#34;&gt;实际上，本文模型就是五折交叉验证 + 预训练微调 + 特征聚合（Mean Average Pooling 和ECAPA-TDNN） + 模型聚合，感觉有点儿像比赛的trick。&lt;/font&gt;&lt;/p&gt;
+&lt;p&gt;  数据集采用的是&lt;strong&gt;IEMOCAP&lt;/strong&gt;。
+&lt;img src=&#34;./figures/iShot_2022-07-04_20.21.56.png&#34; alt=&#34;avator&#34;&gt;
+&lt;img src=&#34;./figures/iShot_2022-07-04_20.22.07.png&#34; alt=&#34;avator&#34;&gt;
+&lt;img src=&#34;./figures/iShot_2022-07-04_20.22.20.png&#34; alt=&#34;avator&#34;&gt;
+&lt;img src=&#34;./figures/iShot_2022-07-04_20.22.33.png&#34; alt=&#34;avator&#34;&gt;
+&lt;img src=&#34;./figures/iShot_2022-07-04_20.22.54.png&#34; alt=&#34;avator&#34;&gt;
+&lt;img src=&#34;./figures/iShot_2022-07-04_20.23.01.png&#34; alt=&#34;avator&#34;&gt;&lt;/p&gt;
+&lt;h6 id=&#34;3-multi-stage-graph-representation-learning-for-dialogue-level-speech-emotion-recognition&#34;&gt;3. Multi-stage Graph Representation Learning For Dialogue-level Speech Emotion Recognition&lt;/h6&gt;
+&lt;blockquote&gt;
+&lt;p&gt;作者单位: 天津大学;
+&lt;a href=&#34;https://ieeexplore.ieee.org/document/9746237&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;论文链接&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;  随着语音情感识别技术的发展，目前的研究大多停留在话语层面，无法适应实际场景的需要。本文提出了一种着重于捕获对话级上下文信息的emotion recognition策略。该策略包含两个模块：1）对话多阶段图表示学习算法(DialogMSG)引入了从不同对话范围进行建模的多阶段图，以获取更有效的信息；2）包含utterance-level classifier和 dialogue-level classifier的双约束模块。&lt;/p&gt;
+&lt;p&gt;  实验用到的数据集是&lt;strong&gt;IEMOCAP&lt;/strong&gt;，dialogue atmosphere标签是该轮dialog的所有utterance中出现频率最高的emotion。 &lt;font color=&#34;#dd0000&#34;&gt;这样做的原因是作者认为对话的氛围与说话人情绪有很强的关系，但取标签的方式显得过于粗糙。尤其IEMOCAP是个表演型数据集（说话人针对特定的情绪进行表演，与真实场景有很大的差距），dialogue atmosphere标签准确率可能会很低。&lt;/font&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;./figures/iShot_2022-07-05_17.12.35.png&#34; alt=&#34;avator&#34;&gt;
+&lt;img src=&#34;./figures/iShot_2022-07-05_17.13.42.png&#34; alt=&#34;avator&#34;&gt;
+&lt;img src=&#34;./figures/iShot_2022-07-05_17.16.02.png&#34; alt=&#34;avator&#34;&gt;
+&lt;img src=&#34;./figures/iShot_2022-07-05_17.16.14.png&#34; alt=&#34;avator&#34;&gt;
+&lt;img src=&#34;./figures/iShot_2022-07-05_17.16.25.png&#34; alt=&#34;avator&#34;&gt;
+&lt;img src=&#34;./figures/iShot_2022-07-05_17.16.33.png&#34; alt=&#34;avator&#34;&gt;&lt;/p&gt;
+&lt;h6 id=&#34;4-frontend-attributes-disentanglement-for-speech-emotion-recognition&#34;&gt;4. Frontend Attributes Disentanglement For Speech Emotion Recognition&lt;/h6&gt;
+&lt;blockquote&gt;
+&lt;p&gt;作者单位: 中国科学技术大学, iFLYTEK Research;
+&lt;a href=&#34;https://ieeexplore.ieee.org/document/9746691&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;论文链接&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;  基于有限数据集的语音情感识别是一项具有挑战性的任务，因为语音信息除了包含情感外，还包含说话人、语义和语种等各种干扰属性。然而，由于说话人与情感属性之间的密切关系，只需对线性模型进行微调，就足以在预先训练的说话人识别(SR)前端提取的话语级嵌入(即向量和x向量)上获得良好的SER性能&lt;font color=&#34;#dd0000&#34;&gt;（作者的核心观点，后续模型设计和实现均以此为基础）&lt;/font&gt;。 换言之，文章的&lt;strong&gt;motivation&lt;/strong&gt;为：通过利用相关领域的大规模数据（说话人识别数据），克服现有标签SER数据不足的问题。&lt;/p&gt;
+&lt;p&gt;  本文的主要工作包括：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;用双空间损失（dual space loss）来分解情感相关 ($R^{+}$) 和情感无关 ($R^{-}$) 空间；（&lt;font color=&#34;#dd0000&#34;&gt;这两个空间的获取方法值得注意，尤其是instance正则化之后的差操作，需要更深入的理解&lt;/font&gt;）&lt;/li&gt;
+&lt;li&gt;通过时频注意力机制来引入远程的上下文信息（long-range contextual information）;&lt;/li&gt;
+&lt;li&gt;与先前基于风格分解（style disentangle）的方法不同，本文提出的方法可以直接应用到前端特征提取器上（&lt;font color=&#34;#dd0000&#34;&gt;主要指其它任务的大规模预训练模型&lt;/font&gt;）。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;  实验采用的数据集是&lt;strong&gt;IEMOCAP&lt;/strong&gt;。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;./figures/iShot_2022-07-06_23.07.26.png&#34; alt=&#34;avator&#34;&gt;
+&lt;img src=&#34;./figures/iShot_2022-07-06_23.07.36.png&#34; alt=&#34;avator&#34;&gt;
+&lt;img src=&#34;./figures/iShot_2022-07-06_23.07.49.png&#34; alt=&#34;avator&#34;&gt;&lt;/p&gt;
+&lt;h6 id=&#34;5-neural-architecture-search-for-speech-emotion-recognition&#34;&gt;5. Neural Architecture Search For Speech Emotion Recognition&lt;/h6&gt;
+&lt;blockquote&gt;
+&lt;p&gt;作者单位: 香港中文大学;
+&lt;a href=&#34;https://ieeexplore.ieee.org/document/9746155&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;论文链接&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;  本文提出了一种基于Neural Architecture Search (NAS) 的网络结构搜索算法，称为：统一路径丢弃策略 (uniform path dropout strategy)，主要就是将NAS原有的uniform path sampling替换为dropout。&lt;/p&gt;
+&lt;p&gt;  所用数据集为IEMOCAP。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;./figures/iShot_2022-07-06_23.23.13.png&#34; alt=&#34;avator&#34;&gt;
+&lt;img src=&#34;./figures/iShot_2022-07-06_23.23.22.png&#34; alt=&#34;avator&#34;&gt;
+&lt;img src=&#34;./figures/iShot_2022-07-06_23.23.36.png&#34; alt=&#34;avator&#34;&gt;&lt;/p&gt;
+&lt;h6 id=&#34;6-climate-and-weather-inspecting-depression-detection-via-emotion-recognition&#34;&gt;6. Climate and Weather: Inspecting Depression Detection Via Emotion Recognition&lt;/h6&gt;
+&lt;blockquote&gt;
+&lt;p&gt;作者单位: 剑桥大学;
+&lt;a href=&#34;https://ieeexplore.ieee.org/document/9746634&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;论文链接&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;  情绪和抑郁之间存在着紧密的关系，因此作者将用于情绪识别的模型迁移到抑郁-健康状态的二分类检测中。作者实验后发现，情绪和抑郁的关系类似于天气和气候，也就有了题目中的Climate和Weather。&lt;/p&gt;
+&lt;p&gt;  所用情绪识别数据集为：&lt;strong&gt;IEMOCAP/MOSEI&lt;/strong&gt;；抑郁检测数据集为：&lt;strong&gt;DAIC-WOZ&lt;/strong&gt;。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;./figures/iShot_2022-07-07_10.51.47.png&#34; alt=&#34;avator&#34;&gt;
+&lt;img src=&#34;./figures/iShot_2022-07-07_10.51.59.png&#34; alt=&#34;avator&#34;&gt;
+&lt;img src=&#34;./figures/iShot_2022-07-07_10.52.06.png&#34; alt=&#34;avator&#34;&gt;
+&lt;img src=&#34;./figures/iShot_2022-07-07_10.52.15.png&#34; alt=&#34;avator&#34;&gt;&lt;/p&gt;
+&lt;h6 id=&#34;7-a-commonsense-knowledge-enhanced-network-with-retrospective-loss-for-emotion-recognition-in-spoken-dialog&#34;&gt;7. A Commonsense Knowledge Enhanced Network with Retrospective Loss for Emotion Recognition in Spoken Dialog&lt;/h6&gt;
+&lt;blockquote&gt;
+&lt;p&gt;作者单位: 哈工大;
+&lt;a href=&#34;https://ieeexplore.ieee.org/document/9746909&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;论文链接&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;   本文研究动机包括：1) 现有对话情感识别数据集 (Emotion Recognition in Spoken Dialog, ERSD) 规模都很小，限制了模型能力；2) 对话中表达的情感与先前的经验有关，这种经验可以是常识 (commonsense knowledge, Case #1 in Fig.1)，也可以是模型历史的判断 (model historical judgement, Case #2 in Fig.1)。&lt;/p&gt;
+&lt;p&gt;  本文提出了CKE-Net来 1）层次化地进行对话建模——&lt;font color=&#34;#dd0000&#34;&gt;不同层特征的concate&lt;/font&gt;；2）集成外部知识 (external knowledge integration)；3）回溯历史状态 (historical state retrospect)。其中， Knowledge Enhancement Module用的外部知识库是ConceptNet，知识表示方式为四元组&amp;lt;concept1, relation, concept2, confidence&amp;gt;，本文没有使用relation属性。&lt;/p&gt;
+&lt;p&gt;   所用数据集为&lt;strong&gt;IEMOCAP&lt;/strong&gt;和&lt;strong&gt;MELD&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;./figures/iShot_2022-07-07_13.49.30.png&#34; alt=&#34;avator&#34;&gt;
+&lt;img src=&#34;./figures/iShot_2022-07-07_13.49.41.png&#34; alt=&#34;avator&#34;&gt;
+&lt;img src=&#34;./figures/iShot_2022-07-07_13.49.50.png&#34; alt=&#34;avator&#34;&gt;
+&lt;img src=&#34;./figures/iShot_2022-07-07_13.50.20.png&#34; alt=&#34;avator&#34;&gt;&lt;/p&gt;
+&lt;h6 id=&#34;8-towards-transferable-speech-emotion-representation-on-loss-functions-for-cross-lingual-latent-representations&#34;&gt;8. Towards Transferable Speech Emotion Representation: on Loss Functions for Cross-lingual Latent Representations&lt;/h6&gt;
+&lt;h6 id=&#34;9-is-cross-attention-preferable-to-self-attention-for-multi-modal-emotion-recognition&#34;&gt;9. Is Cross-attention Preferable to Self-attention for Multi-modal Emotion Recognition?&lt;/h6&gt;
+&lt;h6 id=&#34;10-deepfake-speech-detection-through-emotion-recognition-a-semantic-approach&#34;&gt;10. Deepfake Speech Detection Through Emotion Recognition: A Semantic Approach&lt;/h6&gt;
+&lt;h6 id=&#34;11-not-all-features-are-equal-selection-of-robust-features-for-speech-emotion-recognition-in-noisy-environments&#34;&gt;11. Not All Features Are Equal: Selection of Robust Features for Speech Emotion Recognition in Noisy Environments&lt;/h6&gt;
+&lt;h6 id=&#34;12-domain-invariant-feature-learning-for-cross-corpus-speech-emotion-recognition&#34;&gt;12. Domain-invariant Feature Learning for Cross Corpus Speech Emotion Recognition&lt;/h6&gt;
+&lt;h6 id=&#34;13-speech-emotion-recognition-with-co-attention-based-multi-level-acoustic-information&#34;&gt;13. Speech Emotion Recognition with Co-attention Based Multi-level Acoustic Information&lt;/h6&gt;
+&lt;h6 id=&#34;14-multi-lingual-multi-task-speech-emotion-recognition-using-wav2vec-20&#34;&gt;14. Multi-lingual Multi-task Speech Emotion Recognition Using Wav2vec 2.0&lt;/h6&gt;
+&lt;h6 id=&#34;15-selective-multi-task-learning-for-speech-emotion-recognition-using-corpora-of-different-styles&#34;&gt;15. Selective Multi-task Learning for Speech Emotion Recognition Using Corpora of Different Styles&lt;/h6&gt;
+&lt;h6 id=&#34;16-enhancing-privacy-through-domain-adaptive-noise-injection-for-speech-emotion-recognition&#34;&gt;16. Enhancing Privacy Through Domain Adaptive Noise Injection for Speech Emotion Recognition&lt;/h6&gt;
+&lt;h6 id=&#34;17-confidence-estimation-for-speech-emotion-recognition-based-on-the-relationship-between-emotion-categories-and-primitives&#34;&gt;17. Confidence Estimation for Speech Emotion Recognition Based on the Relationship Between Emotion Categories and Primitives&lt;/h6&gt;
+&lt;h6 id=&#34;18-light-sernet-a-lightweight-fully-convolutional-neural-network-for-speech-emotion-recognition&#34;&gt;18. Light-sernet: a Lightweight Fully Convolutional Neural Network for Speech Emotion Recognition&lt;/h6&gt;
+&lt;h6 id=&#34;19-key-sparse-transformer-for-multimodal-speech-emotion-recognition&#34;&gt;19. Key-sparse Transformer for Multimodal Speech Emotion Recognition&lt;/h6&gt;
+&lt;h6 id=&#34;20-speaker-normalization-for-self-supervised-speech-emotion-recognition&#34;&gt;20. Speaker Normalization for Self-supervised Speech Emotion Recognition&lt;/h6&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>论文阅读——多模态情感分析（二）</title>
+      <link>http://resume.2oil.top/zh/post/2022-07-03/</link>
+      <pubDate>Sun, 03 Jul 2022 00:00:00 +0000</pubDate>
+      <guid>http://resume.2oil.top/zh/post/2022-07-03/</guid>
+      <description>&lt;h3 id=&#34;11-动机&#34;&gt;1.1 动机&lt;/h3&gt;
+&lt;h4 id=&#34;111-emotion的定义&#34;&gt;1.1.1 emotion的定义&lt;/h4&gt;
+&lt;ol&gt;
+&lt;li&gt;离散型：anger, disgust, fear, happiness, sadness, surprise六种基本类型，可进一步拓展到27种 [1]。&lt;/li&gt;
+&lt;li&gt;连续型：Activation (唤醒度), Valence (警觉度), Dominance (受支配程度) (AVD)空间中的一个点。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;blockquote&gt;
+&lt;p&gt;情绪的定义有很多，以下是两种方式&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h5 id=&#34;情感沙漏&#34;&gt;情感沙漏&lt;/h5&gt;
+&lt;p&gt;情感沙漏[3]: Sensitivity, Aptitude, Attention and Pleasantness四种属性与Sentiment Polarity之间的关系
+&lt;img src=&#34;./figures/iShot_2022-07-03_22.45.04.png&#34; alt=&#34;Hourglass of Emotions&#34;&gt;&lt;/p&gt;
+&lt;h5 id=&#34;情绪轮以下参考自4&#34;&gt;情绪轮，以下参考自[4]&lt;/h5&gt;
+&lt;h6 id=&#34;离散情绪&#34;&gt;离散情绪&lt;/h6&gt;
+&lt;p&gt;&lt;img src=&#34;./figures/20201116143235412.png&#34; alt=&#34;情绪轮&#34;&gt;
+在情绪轮圆锥体底部的情绪更强烈，向上随着强度的降低，它们更难被区分开。&lt;/p&gt;
+&lt;h5 id=&#34;连续空间情绪&#34;&gt;连续空间情绪&lt;/h5&gt;
+&lt;p&gt;&lt;img src=&#34;./figures/2020111214263288.png&#34; alt=&#34;AVD distribution&#34;&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Valence：消极（伤心）→积极（高兴）&lt;/li&gt;
+&lt;li&gt;Arousal：平静→激动&lt;/li&gt;
+&lt;li&gt;Dominance：受/被支配→在控制中
+&lt;img src=&#34;./figures/20201112145604155.png&#34; alt=&#34;Valence and Activation&#34;&gt;
+在Valence与Arousal维度上，连续情绪表示与离散情绪类别之间的关系&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;121-假设&#34;&gt;1.2.1 假设&lt;/h4&gt;
+&lt;p&gt;作者认为语音emotion的Valence维与文本sentiment相关，并通过IEMOCAP数据集进行了验证，如表1。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;negative text-sentiment多与negative speech (sad, anger, frustrated) 相关&lt;/li&gt;
+&lt;li&gt;positive text-sentiment多与positive speech (happy) 相关&lt;/li&gt;
+&lt;li&gt;将Sad, Frustrated, Anger映射为一类后，计算得到的Spearman相关系数$\rho$为0.22，为正相关 （&lt;font color=&#34;#dd0000&#34;&gt;-1 $\leq$ $\rho$ $\leq$ 1，$\pm1$时为完全相关。参考Pearson相关性系数衡量的标准，0.22属于弱正相关&lt;/font&gt;）&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&#34;./figures/iemocap_confusion_matrix.png&#34; alt=&#34;Confusion Matrix on IEMOCAP dataset&#34;&gt;&lt;/p&gt;
+&lt;h3 id=&#34;12-模型架构&#34;&gt;1.2 模型架构&lt;/h3&gt;
+&lt;h4 id=&#34;121-预训练部分&#34;&gt;1.2.1 预训练部分&lt;/h4&gt;
+&lt;p&gt;包含语音识别和语音情感识别两个子任务，目标函数为：$L_{global} = L_{ASR} + \lambda L_{sentiment}$。作者在实验中将$\lambda$设置成了200。
+&lt;img src=&#34;./figures/pretrain_model.png&#34; alt=&#34;Pretraining Model&#34;&gt;&lt;/p&gt;
+&lt;h4 id=&#34;122-微调部分&#34;&gt;1.2.2 微调部分&lt;/h4&gt;
+&lt;p&gt;目标函数为：
+$CCC(y, \hat y) = \frac{2Cov(y, \hat y)}{\sigma_{y}^{2} + \sigma_{\hat y}^{2} + (\mu_{y} - \mu_{\hat y})^{2}}$&lt;/p&gt;
+&lt;p&gt;$L_{CCC} = - \frac{1}{3}(CCC_{A} + CCC_{V} + CCC_{D})$
+&lt;img src=&#34;./figures/finetune_model.png&#34; alt=&#34;Finetune Model&#34;&gt;&lt;/p&gt;
+&lt;h3 id=&#34;13-数据集&#34;&gt;1.3 数据集&lt;/h3&gt;
+&lt;blockquote&gt;
+&lt;p&gt;文章用来做语音emotion识别数据集是MSP-Podcast&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h4 id=&#34;131-数据来源和众包标注&#34;&gt;1.3.1 数据来源和众包标注&lt;/h4&gt;
+&lt;p&gt;&lt;img src=&#34;./figures/MSP-Podcast.png&#34; alt=&#34;MSP-PODCAST Corpus&#34;&gt;&lt;/p&gt;
+&lt;h4 id=&#34;132-标注&#34;&gt;1.3.2 标注&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;基于属性的描述符(Activation, Dominance and Valence)&lt;/li&gt;
+&lt;li&gt;分类标签(anger, happiness, sadness, disgust, surprised, fear, contempt, neutral and other)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;133-数据规模&#34;&gt;1.3.3 数据规模&lt;/h4&gt;
+&lt;blockquote&gt;
+&lt;p&gt;语料库的收集是一个持续的过程。1.7版本有62140段语音(约100小时)&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th style=&#34;text-align:center&#34;&gt;数据类别&lt;/th&gt;
+&lt;th style=&#34;text-align:center&#34;&gt;数目&lt;/th&gt;
+&lt;th style=&#34;text-align:center&#34;&gt;备注&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;Train set&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;38179&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;Development set&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;7538&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;44 speakers (22 female and 22 male)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;Test set 1&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;12902&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;60 speakers (30 female and 30 male)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;Test set 2&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;3521&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;randomly select from 100 podcasts. Segments from these podcasts are not included in any other partition.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h3 id=&#34;14-实验结果&#34;&gt;1.4 实验结果&lt;/h3&gt;
+&lt;h4 id=&#34;asr特征有效性&#34;&gt;ASR特征有效性&lt;/h4&gt;
+&lt;p&gt;&lt;img src=&#34;./figures/iShot_2022-07-03_17.53.18.png&#34; alt=&#34;avater&#34;&gt;&lt;/p&gt;
+&lt;h4 id=&#34;混合text-sentiment的asr特征有效性&#34;&gt;混合text-sentiment的ASR特征有效性&lt;/h4&gt;
+&lt;p&gt;这里在自己的实验结果不如CPC时，作者自圆其说的方法（对valence维度更感兴趣）：“However, in this equal-weight multi-task emotion training setting, we see that activation and dominance dimension performs relatively weak compare to that of. We view this as an encouraging result as in many applications, valence (positive v.s. negative) is of most interest.”
+&lt;img src=&#34;./figures/iShot_2022-07-03_17.53.38.png&#34; alt=&#34;avater&#34;&gt;&lt;/p&gt;
+&lt;h4 id=&#34;微调有效性&#34;&gt;微调有效性&lt;/h4&gt;
+&lt;p&gt;&lt;img src=&#34;./figures/iShot_2022-07-03_17.53.47.png&#34; alt=&#34;avater&#34;&gt;&lt;/p&gt;
+&lt;h3 id=&#34;参考文献&#34;&gt;参考文献&lt;/h3&gt;
+&lt;p&gt;[1] &lt;a href=&#34;https://www.pnas.org/doi/10.1073/pnas.1702247114&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Self-report captures 27 distinct categories of emotion bridged by continuous gradients&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;[2] &lt;a href=&#34;https://ecs.utdallas.edu/research/researchlabs/msp-lab/publications/Lotfian_2019_3.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Building naturalistic emotionally balanced speech corpus by retrieving emotional speech from existing podcast recordings&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;[3] &lt;a href=&#34;&#34;&gt;SenticNet: A Publicly Available Semantic Resource for Opinion Mining&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;[4] &lt;a href=&#34;https://blog.csdn.net/Cratial/article/details/109642713&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;情绪计算——“情绪空间”表达&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>论文阅读——多模态情感分析（一）</title>
+      <link>http://resume.2oil.top/zh/post/2020-07-16/</link>
+      <pubDate>Thu, 16 Jul 2020 00:00:00 +0000</pubDate>
+      <guid>http://resume.2oil.top/zh/post/2020-07-16/</guid>
+      <description>&lt;h3 id=&#34;__文章一memory-fusion-network-for-multi-view-sequential-learningzadeh2018__&#34;&gt;&lt;strong&gt;文章一：Memory Fusion Network for Multi-view Sequential Learning[@Zadeh2018]&lt;/strong&gt;&lt;/h3&gt;
+&lt;blockquote&gt;
+&lt;p&gt;2018年AAAI会议文章，主要工作是构造了针对多模态数据的MFN&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h4 id=&#34;__basic-concepts__&#34;&gt;&lt;strong&gt;Basic concepts&lt;/strong&gt;&lt;/h4&gt;
+&lt;p&gt;多模态的序列学习包括两个过程&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;view-specific interactions&lt;/strong&gt;&lt;/em&gt; that handle only one view&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;cross-view interactions&lt;/strong&gt;&lt;/em&gt; which are defined across different views and need to handle multi-views&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;so, the modeling of view-specific interactions and cross-view interactions is the &lt;em&gt;&lt;strong&gt;core question&lt;/strong&gt;&lt;/em&gt; of multi-view sequential learning[@Zadeh2018]&lt;/p&gt;
+&lt;p&gt;文章将多模态学习分为三类，基本思路是将不同模态下的特征向量映射到同一个特征子空间&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;the first category of models have relied on concatenation of all multiple views into a single view to simplify the learning setting&lt;/li&gt;
+&lt;/ol&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;思路：&lt;strong&gt;通过将不同模态映射到某个单一模态来获得&lt;/strong&gt;input层次&lt;/strong&gt;的级联，再送入神经网络进行学习，得到特征向量&lt;br&gt;
+**问题：**简单的级联忽视了不同模态的数据本来就有专属特征&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ol start=&#34;2&#34;&gt;
+&lt;li&gt;the second category of models introduce multi-view variants to the structured learning approaches of the first category&lt;/li&gt;
+&lt;/ol&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;思路：&lt;strong&gt;对第一种的改进，单独学习每个模态的特征向量，是&lt;/strong&gt;特征层次&lt;/strong&gt;上的级联&lt;br&gt;
+&lt;strong&gt;问题：&lt;/strong&gt;  &lt;em&gt;特征向量的级联&lt;/em&gt;，如$${v}, {a}, {l} -&amp;gt; {v, a, l}$$并没有做到真正的数据融合&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ol start=&#34;3&#34;&gt;
+&lt;li&gt;the third category of models rely on collapsing the time dimension from sequences by learning a temporal representation for each of the different views.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;思路：&lt;/strong&gt; 按照时间维度融合多模态的数据，融合后的特征向量是几个模态的平均，是&lt;strong&gt;特征层次&lt;/strong&gt;上的级联，是&lt;em&gt;modality fusion&lt;/em&gt;，或者通过voting的方式获取结果&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;my question: I don&amp;rsquo;t think that combining models by voting is a fusion method which should do fusion before generating decision, but the author classified it to the thrid category.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;问题：&lt;/strong&gt; 平均的方式掩盖了不同模态之间的差异性&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h4 id=&#34;__motivation__&#34;&gt;&lt;strong&gt;Motivation&lt;/strong&gt;&lt;/h4&gt;
+&lt;h4 id=&#34;__innovation__&#34;&gt;&lt;strong&gt;Innovation&lt;/strong&gt;&lt;/h4&gt;
+&lt;h4 id=&#34;__datasets__&#34;&gt;&lt;strong&gt;DataSets&lt;/strong&gt;&lt;/h4&gt;
+&lt;p&gt;Memory Fusion Network (MFN) 由三部分构成：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;the Systems of LSTMs for view-specific interactions&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;a special attention mechanism for cross-view interactions(DMAN)&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Multi-view Gated Memory for summarization&lt;/strong&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;文章二tensor-fusion-network-for-multimodal-sentiment-analysis&#34;&gt;文章二：Tensor Fusion Network for Multimodal Sentiment Analysis.&lt;/h3&gt;
+&lt;p&gt;这是普通的文字&lt;/p&gt;
+&lt;h4 id=&#34;论文笔记前传&#34;&gt;论文笔记前传&lt;/h4&gt;
+&lt;p&gt;&lt;img src=&#34;images/LSTM-constructor.jpeg&#34; alt=&#34;LSTM结构单元示意图&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;images/tfn.png&#34; alt=&#34;结构一&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;images/mfn.png&#34; alt=&#34;结构二&#34;&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
