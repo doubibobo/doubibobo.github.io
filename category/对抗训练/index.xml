@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>对抗训练 | Never-Ending Travel</title>
-    <link>http://resume.2oil.top/category/%E5%AF%B9%E6%8A%97%E8%AE%AD%E7%BB%83/</link>
-      <atom:link href="http://resume.2oil.top/category/%E5%AF%B9%E6%8A%97%E8%AE%AD%E7%BB%83/index.xml" rel="self" type="application/rss+xml" />
+    <link>https://doubibobo.github.io/category/%E5%AF%B9%E6%8A%97%E8%AE%AD%E7%BB%83/</link>
+      <atom:link href="https://doubibobo.github.io/category/%E5%AF%B9%E6%8A%97%E8%AE%AD%E7%BB%83/index.xml" rel="self" type="application/rss+xml" />
     <description>对抗训练</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© 2021-2023. Never-Ending Travel. All Rights Reserved. [鲁ICP备2021007223号-1](https://beian.miit.gov.cn/)</copyright><lastBuildDate>Wed, 29 Jun 2022 00:00:00 +0000</lastBuildDate>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© 2021-2023. Never-Ending Travel. All Rights Reserved.</copyright><lastBuildDate>Wed, 29 Jun 2022 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>http://resume.2oil.top/media/icon_hud0ce531716296da633c567fb13fa2911_442_512x512_fill_lanczos_center_2.png</url>
+      <url>https://doubibobo.github.io/media/icon_hud0ce531716296da633c567fb13fa2911_442_512x512_fill_lanczos_center_2.png</url>
       <title>对抗训练</title>
-      <link>http://resume.2oil.top/category/%E5%AF%B9%E6%8A%97%E8%AE%AD%E7%BB%83/</link>
+      <link>https://doubibobo.github.io/category/%E5%AF%B9%E6%8A%97%E8%AE%AD%E7%BB%83/</link>
     </image>
     
     <item>
       <title>炼丹技巧-对抗训练</title>
-      <link>http://resume.2oil.top/post/2022-06-29/</link>
+      <link>https://doubibobo.github.io/post/2022-06-29/</link>
       <pubDate>Wed, 29 Jun 2022 00:00:00 +0000</pubDate>
-      <guid>http://resume.2oil.top/post/2022-06-29/</guid>
+      <guid>https://doubibobo.github.io/post/2022-06-29/</guid>
       <description>&lt;h3 id=&#34;fgm&#34;&gt;FGM&lt;/h3&gt;
 &lt;pre&gt;&lt;code&gt;class FGM:
     &amp;quot;&amp;quot;&amp;quot;

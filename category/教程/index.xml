@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>教程 | Never-Ending Travel</title>
-    <link>http://resume.2oil.top/category/%E6%95%99%E7%A8%8B/</link>
-      <atom:link href="http://resume.2oil.top/category/%E6%95%99%E7%A8%8B/index.xml" rel="self" type="application/rss+xml" />
+    <link>https://doubibobo.github.io/category/%E6%95%99%E7%A8%8B/</link>
+      <atom:link href="https://doubibobo.github.io/category/%E6%95%99%E7%A8%8B/index.xml" rel="self" type="application/rss+xml" />
     <description>教程</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© 2021-2023. Never-Ending Travel. All Rights Reserved. [鲁ICP备2021007223号-1](https://beian.miit.gov.cn/)</copyright><lastBuildDate>Thu, 13 Dec 2018 00:00:00 +0000</lastBuildDate>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© 2021-2023. Never-Ending Travel. All Rights Reserved.</copyright><lastBuildDate>Thu, 13 Dec 2018 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>http://resume.2oil.top/media/icon_hud0ce531716296da633c567fb13fa2911_442_512x512_fill_lanczos_center_2.png</url>
+      <url>https://doubibobo.github.io/media/icon_hud0ce531716296da633c567fb13fa2911_442_512x512_fill_lanczos_center_2.png</url>
       <title>教程</title>
-      <link>http://resume.2oil.top/category/%E6%95%99%E7%A8%8B/</link>
+      <link>https://doubibobo.github.io/category/%E6%95%99%E7%A8%8B/</link>
     </image>
     
     <item>
       <title>Welcome to Wowchemy, the website builder for Hugo</title>
-      <link>http://resume.2oil.top/post/getting-started/</link>
+      <link>https://doubibobo.github.io/post/getting-started/</link>
       <pubDate>Thu, 13 Dec 2018 00:00:00 +0000</pubDate>
-      <guid>http://resume.2oil.top/post/getting-started/</guid>
+      <guid>https://doubibobo.github.io/post/getting-started/</guid>
       <description>&lt;h2 id=&#34;overview&#34;&gt;Overview&lt;/h2&gt;
 &lt;ol&gt;
 &lt;li&gt;The Wowchemy website builder for Hugo, along with its starter templates, is designed for professional creators, educators, and teams/organizations - although it can be used to create any kind of site&lt;/li&gt;

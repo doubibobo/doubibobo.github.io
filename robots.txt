@@ -1,3 +1,3 @@
 User-agent: *
 
-Sitemap: http://resume.2oil.top/sitemap.xml
+Sitemap: https://doubibobo.github.io/sitemap.xml
