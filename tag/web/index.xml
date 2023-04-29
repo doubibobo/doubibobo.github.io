@@ -2,30 +2,30 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Web | Never-Ending Travel</title>
-    <link>https://doubibobo.github.io/tag/web/</link>
-      <atom:link href="https://doubibobo.github.io/tag/web/index.xml" rel="self" type="application/rss+xml" />
+    <link>https://2oil.top/tag/web/</link>
+      <atom:link href="https://2oil.top/tag/web/index.xml" rel="self" type="application/rss+xml" />
     <description>Web</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© 2021-2023. Never-Ending Travel. All Rights Reserved.</copyright><lastBuildDate>Sat, 27 Apr 2019 00:00:00 +0000</lastBuildDate>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© 2021-2023. Never-Ending Travel. All Rights Reserved. [鲁ICP备2021007223号-1](https://beian.miit.gov.cn/)</copyright><lastBuildDate>Sat, 27 Apr 2019 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>https://doubibobo.github.io/media/icon_hud0ce531716296da633c567fb13fa2911_442_512x512_fill_lanczos_center_2.png</url>
+      <url>https://2oil.top/media/icon_hud0ce531716296da633c567fb13fa2911_442_512x512_fill_lanczos_center_2.png</url>
       <title>Web</title>
-      <link>https://doubibobo.github.io/tag/web/</link>
+      <link>https://2oil.top/tag/web/</link>
     </image>
     
     <item>
       <title>华中农业大学食品科学与技术学院研究生复试系统</title>
-      <link>https://doubibobo.github.io/project/retest/</link>
+      <link>https://2oil.top/project/retest/</link>
       <pubDate>Sat, 27 Apr 2019 00:00:00 +0000</pubDate>
-      <guid>https://doubibobo.github.io/project/retest/</guid>
+      <guid>https://2oil.top/project/retest/</guid>
       <description>&lt;p&gt;采用 Flask 框架实现，包括学生信息管理、试题信息管 理、试卷生成与试题导出等模块&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>基于 Spring Boot 与 Vue 的山羊生产管理追溯平台</title>
-      <link>https://doubibobo.github.io/project/springboot-vue/</link>
+      <link>https://2oil.top/project/springboot-vue/</link>
       <pubDate>Fri, 27 Apr 2018 00:00:00 +0000</pubDate>
-      <guid>https://doubibobo.github.io/project/springboot-vue/</guid>
+      <guid>https://2oil.top/project/springboot-vue/</guid>
       <description>&lt;p&gt;该平台包括后端和前端两个部分，采用 Spring boot MyBatis + Vue 架构，数据库使用的是 MySQL。&lt;/p&gt;
 &lt;p&gt;前期，负责登录模块和权限模块，登录模块使用内存数据库 Redis 来保存登录状态并提高访问速度; 权限 模块采用角色权限管理模式，将用户、角色、权限进行关联，实现对总公司、省、市、县四层代理的管理。&lt;/p&gt;
 &lt;p&gt;后期，负责项目的需求迭代管理、模块设计、平台上线和版本维护。&lt;/p&gt;
@@ -34,18 +34,18 @@
     
     <item>
       <title>学生信息管理系统</title>
-      <link>https://doubibobo.github.io/project/student-system/</link>
+      <link>https://2oil.top/project/student-system/</link>
       <pubDate>Wed, 27 Dec 2017 00:00:00 +0000</pubDate>
-      <guid>https://doubibobo.github.io/project/student-system/</guid>
+      <guid>https://2oil.top/project/student-system/</guid>
       <description>&lt;p&gt;采用基于 JSP+JavaBean+Servlet 的 MVC 三层设计模式，将两个不同的学生数据库进 行数据集成，从而达到系统综合应用效果。&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>华中农业大学植物科学与技术学院若干软件平台开发</title>
-      <link>https://doubibobo.github.io/project/hzau-zky/</link>
+      <link>https://2oil.top/project/hzau-zky/</link>
       <pubDate>Thu, 27 Apr 2017 00:00:00 +0000</pubDate>
-      <guid>https://doubibobo.github.io/project/hzau-zky/</guid>
+      <guid>https://2oil.top/project/hzau-zky/</guid>
       <description>&lt;p&gt;包括公共实验平台、设施设备管理平台、作物学实验&lt;/p&gt;
 &lt;p&gt;教学中心官网和作物学互动交流平台四个软件系统的后端部分设计与实现。&lt;/p&gt;
 </description>

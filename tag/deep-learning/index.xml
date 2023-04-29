@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Deep Learning | Never-Ending Travel</title>
-    <link>https://doubibobo.github.io/tag/deep-learning/</link>
-      <atom:link href="https://doubibobo.github.io/tag/deep-learning/index.xml" rel="self" type="application/rss+xml" />
+    <link>https://2oil.top/tag/deep-learning/</link>
+      <atom:link href="https://2oil.top/tag/deep-learning/index.xml" rel="self" type="application/rss+xml" />
     <description>Deep Learning</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© 2021-2023. Never-Ending Travel. All Rights Reserved.</copyright><lastBuildDate>Thu, 27 Apr 2017 00:00:00 +0000</lastBuildDate>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© 2021-2023. Never-Ending Travel. All Rights Reserved. [鲁ICP备2021007223号-1](https://beian.miit.gov.cn/)</copyright><lastBuildDate>Thu, 27 Apr 2017 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>https://doubibobo.github.io/media/icon_hud0ce531716296da633c567fb13fa2911_442_512x512_fill_lanczos_center_2.png</url>
+      <url>https://2oil.top/media/icon_hud0ce531716296da633c567fb13fa2911_442_512x512_fill_lanczos_center_2.png</url>
       <title>Deep Learning</title>
-      <link>https://doubibobo.github.io/tag/deep-learning/</link>
+      <link>https://2oil.top/tag/deep-learning/</link>
     </image>
     
     <item>
       <title>基于卷积神经网络的人脸识别系统</title>
-      <link>https://doubibobo.github.io/project/face-recognition/</link>
+      <link>https://2oil.top/project/face-recognition/</link>
       <pubDate>Thu, 27 Apr 2017 00:00:00 +0000</pubDate>
-      <guid>https://doubibobo.github.io/project/face-recognition/</guid>
+      <guid>https://2oil.top/project/face-recognition/</guid>
       <description>&lt;p&gt;该平台利用 TensorFlow 版的 Keras 库，搭建卷积神经网络，将前期获取的图像进行前期预处理，采用交叉验证方式训练神经网络，最终实现从实时视频流中识别人脸信息。&lt;/p&gt;
 &lt;p&gt;前期，主要负责相关文献的查询以及采用卷积神经网络方式的确定。&lt;/p&gt;
 &lt;p&gt;后期，主要负责图像预处理 (灰度变换处理、均衡化处理、平滑处理)，以及卷积神经网络的构建和训练。&lt;/p&gt;

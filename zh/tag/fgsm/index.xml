@@ -2,21 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>FGSM | 大道之行</title>
-    <link>https://doubibobo.github.io/zh/tag/fgsm/</link>
-      <atom:link href="https://doubibobo.github.io/zh/tag/fgsm/index.xml" rel="self" type="application/rss+xml" />
+    <link>https://2oil.top/zh/tag/fgsm/</link>
+      <atom:link href="https://2oil.top/zh/tag/fgsm/index.xml" rel="self" type="application/rss+xml" />
     <description>FGSM</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>zh-Hans</language><copyright>© 2021-2023 深度学习两滴油 版权所有.</copyright><lastBuildDate>Wed, 29 Jun 2022 00:00:00 +0000</lastBuildDate>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>zh-Hans</language><copyright>© 2021-2023 深度学习两滴油 版权所有. 鲁ICP备2021007223号-1 鲁公网安备37132702371387号
+  </copyright><lastBuildDate>Wed, 29 Jun 2022 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>https://doubibobo.github.io/media/icon_hud0ce531716296da633c567fb13fa2911_442_512x512_fill_lanczos_center_2.png</url>
+      <url>https://2oil.top/media/icon_hud0ce531716296da633c567fb13fa2911_442_512x512_fill_lanczos_center_2.png</url>
       <title>FGSM</title>
-      <link>https://doubibobo.github.io/zh/tag/fgsm/</link>
+      <link>https://2oil.top/zh/tag/fgsm/</link>
     </image>
     
     <item>
       <title>炼丹技巧-对抗训练</title>
-      <link>https://doubibobo.github.io/zh/post/2022-06-29/</link>
+      <link>https://2oil.top/zh/post/2022-06-29/</link>
       <pubDate>Wed, 29 Jun 2022 00:00:00 +0000</pubDate>
-      <guid>https://doubibobo.github.io/zh/post/2022-06-29/</guid>
+      <guid>https://2oil.top/zh/post/2022-06-29/</guid>
       <description>&lt;h3 id=&#34;fgm&#34;&gt;FGM&lt;/h3&gt;
 &lt;pre&gt;&lt;code&gt;class FGM:
     &amp;quot;&amp;quot;&amp;quot;

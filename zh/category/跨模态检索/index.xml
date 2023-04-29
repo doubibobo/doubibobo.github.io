@@ -2,21 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>跨模态检索 | 大道之行</title>
-    <link>https://doubibobo.github.io/zh/category/%E8%B7%A8%E6%A8%A1%E6%80%81%E6%A3%80%E7%B4%A2/</link>
-      <atom:link href="https://doubibobo.github.io/zh/category/%E8%B7%A8%E6%A8%A1%E6%80%81%E6%A3%80%E7%B4%A2/index.xml" rel="self" type="application/rss+xml" />
+    <link>https://2oil.top/zh/category/%E8%B7%A8%E6%A8%A1%E6%80%81%E6%A3%80%E7%B4%A2/</link>
+      <atom:link href="https://2oil.top/zh/category/%E8%B7%A8%E6%A8%A1%E6%80%81%E6%A3%80%E7%B4%A2/index.xml" rel="self" type="application/rss+xml" />
     <description>跨模态检索</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>zh-Hans</language><copyright>© 2021-2023 深度学习两滴油 版权所有.</copyright><lastBuildDate>Mon, 15 Aug 2022 00:00:00 +0000</lastBuildDate>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>zh-Hans</language><copyright>© 2021-2023 深度学习两滴油 版权所有. 鲁ICP备2021007223号-1 鲁公网安备37132702371387号
+  </copyright><lastBuildDate>Mon, 15 Aug 2022 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>https://doubibobo.github.io/media/icon_hud0ce531716296da633c567fb13fa2911_442_512x512_fill_lanczos_center_2.png</url>
+      <url>https://2oil.top/media/icon_hud0ce531716296da633c567fb13fa2911_442_512x512_fill_lanczos_center_2.png</url>
       <title>跨模态检索</title>
-      <link>https://doubibobo.github.io/zh/category/%E8%B7%A8%E6%A8%A1%E6%80%81%E6%A3%80%E7%B4%A2/</link>
+      <link>https://2oil.top/zh/category/%E8%B7%A8%E6%A8%A1%E6%80%81%E6%A3%80%E7%B4%A2/</link>
     </image>
     
     <item>
       <title>多模态表征学习（跨模态检索——视频描述生成）</title>
-      <link>https://doubibobo.github.io/zh/post/2022-08-15/</link>
+      <link>https://2oil.top/zh/post/2022-08-15/</link>
       <pubDate>Mon, 15 Aug 2022 00:00:00 +0000</pubDate>
-      <guid>https://doubibobo.github.io/zh/post/2022-08-15/</guid>
+      <guid>https://2oil.top/zh/post/2022-08-15/</guid>
       <description>&lt;h5 id=&#34;1-motivation&#34;&gt;1. Motivation&lt;/h5&gt;
 &lt;p&gt;作者认为：很多视频-文本任务都蕴含着不同粒度的信息，如：视频帧-单词、片段-句子、视频-段落，每个都包含了不同粒度的语义信息。&lt;/p&gt;
 &lt;p&gt;本文解决的问题是：1）如何有效利用层次化的信息；2）如何建模不同粒度、不同模态数据之间的信息交互。&lt;/p&gt;

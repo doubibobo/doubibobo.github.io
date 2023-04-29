@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Publications | Never-Ending Travel</title>
-    <link>https://doubibobo.github.io/publication/</link>
-      <atom:link href="https://doubibobo.github.io/publication/index.xml" rel="self" type="application/rss+xml" />
+    <link>https://2oil.top/publication/</link>
+      <atom:link href="https://2oil.top/publication/index.xml" rel="self" type="application/rss+xml" />
     <description>Publications</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© 2021-2023. Never-Ending Travel. All Rights Reserved.</copyright><lastBuildDate>Sun, 05 Mar 2023 00:00:00 +0000</lastBuildDate>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© 2021-2023. Never-Ending Travel. All Rights Reserved. [鲁ICP备2021007223号-1](https://beian.miit.gov.cn/)</copyright><lastBuildDate>Sun, 05 Mar 2023 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>https://doubibobo.github.io/media/icon_hud0ce531716296da633c567fb13fa2911_442_512x512_fill_lanczos_center_2.png</url>
+      <url>https://2oil.top/media/icon_hud0ce531716296da633c567fb13fa2911_442_512x512_fill_lanczos_center_2.png</url>
       <title>Publications</title>
-      <link>https://doubibobo.github.io/publication/</link>
+      <link>https://2oil.top/publication/</link>
     </image>
     
     <item>
       <title>MFID-Net: Multi-scaled feature-fused image dehazing via dynamic weights</title>
-      <link>https://doubibobo.github.io/publication/displays2023/</link>
+      <link>https://2oil.top/publication/displays2023/</link>
       <pubDate>Sun, 05 Mar 2023 00:00:00 +0000</pubDate>
-      <guid>https://doubibobo.github.io/publication/displays2023/</guid>
+      <guid>https://2oil.top/publication/displays2023/</guid>
       <description>&lt;!-- &lt;div class=&#34;alert alert-note&#34;&gt;
   &lt;div&gt;
     Click the &lt;em&gt;Cite&lt;/em&gt; button above to demo the feature to enable visitors to import publication metadata into their reference management software.
@@ -36,9 +36,9 @@
     
     <item>
       <title>Combining cross-modal knowledge transfer and semi-supervised learning for speech emotion recognition</title>
-      <link>https://doubibobo.github.io/publication/kbs2021/</link>
+      <link>https://2oil.top/publication/kbs2021/</link>
       <pubDate>Mon, 11 Oct 2021 00:00:00 +0000</pubDate>
-      <guid>https://doubibobo.github.io/publication/kbs2021/</guid>
+      <guid>https://2oil.top/publication/kbs2021/</guid>
       <description>&lt;!-- &lt;div class=&#34;alert alert-note&#34;&gt;
   &lt;div&gt;
     Click the &lt;em&gt;Cite&lt;/em&gt; button above to demo the feature to enable visitors to import publication metadata into their reference management software.

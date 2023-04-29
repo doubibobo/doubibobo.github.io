@@ -2,21 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>大道之行</title>
-    <link>https://doubibobo.github.io/zh/</link>
-      <atom:link href="https://doubibobo.github.io/zh/index.xml" rel="self" type="application/rss+xml" />
+    <link>https://2oil.top/zh/</link>
+      <atom:link href="https://2oil.top/zh/index.xml" rel="self" type="application/rss+xml" />
     <description>大道之行</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>zh-Hans</language><copyright>© 2021-2023 深度学习两滴油 版权所有.</copyright><lastBuildDate>Sun, 05 Mar 2023 00:00:00 +0000</lastBuildDate>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>zh-Hans</language><copyright>© 2021-2023 深度学习两滴油 版权所有. 鲁ICP备2021007223号-1 鲁公网安备37132702371387号
+  </copyright><lastBuildDate>Sun, 05 Mar 2023 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>https://doubibobo.github.io/media/icon_hud0ce531716296da633c567fb13fa2911_442_512x512_fill_lanczos_center_2.png</url>
+      <url>https://2oil.top/media/icon_hud0ce531716296da633c567fb13fa2911_442_512x512_fill_lanczos_center_2.png</url>
       <title>大道之行</title>
-      <link>https://doubibobo.github.io/zh/</link>
+      <link>https://2oil.top/zh/</link>
     </image>
     
     <item>
       <title>MFID-Net: Multi-scaled feature-fused image dehazing via dynamic weights</title>
-      <link>https://doubibobo.github.io/zh/publication/displays2023/</link>
+      <link>https://2oil.top/zh/publication/displays2023/</link>
       <pubDate>Sun, 05 Mar 2023 00:00:00 +0000</pubDate>
-      <guid>https://doubibobo.github.io/zh/publication/displays2023/</guid>
+      <guid>https://2oil.top/zh/publication/displays2023/</guid>
       <description>&lt;!-- &lt;div class=&#34;alert alert-note&#34;&gt;
   &lt;div&gt;
     Click the &lt;em&gt;Cite&lt;/em&gt; button above to demo the feature to enable visitors to import publication metadata into their reference management software.
@@ -36,9 +37,9 @@
     
     <item>
       <title>论文阅读——ERC任务综述</title>
-      <link>https://doubibobo.github.io/zh/post/2022-08-23/</link>
+      <link>https://2oil.top/zh/post/2022-08-23/</link>
       <pubDate>Tue, 23 Aug 2022 00:00:00 +0000</pubDate>
-      <guid>https://doubibobo.github.io/zh/post/2022-08-23/</guid>
+      <guid>https://2oil.top/zh/post/2022-08-23/</guid>
       <description>&lt;!-- ##### 1. MMGCN: Multimodal Fusion via Deep Graph Convolution Network for Emotion Recognition in Conversation
 &gt; 作者单位: 中国人民大学 金琴团队
 &gt; [论文链接](https://aclanthology.org/2021.acl-long.440.pdf)
@@ -159,17 +160,17 @@ Abstract: Emotion recognition in conversation (ERC) is a crucial component in af
     
     <item>
       <title>论文阅读——模态缺失任务</title>
-      <link>https://doubibobo.github.io/zh/post/2023-04-01/</link>
+      <link>https://2oil.top/zh/post/2023-04-01/</link>
       <pubDate>Tue, 23 Aug 2022 00:00:00 +0000</pubDate>
-      <guid>https://doubibobo.github.io/zh/post/2023-04-01/</guid>
+      <guid>https://2oil.top/zh/post/2023-04-01/</guid>
       <description></description>
     </item>
     
     <item>
       <title>多模态表征学习（跨模态检索——视频描述生成）</title>
-      <link>https://doubibobo.github.io/zh/post/2022-08-15/</link>
+      <link>https://2oil.top/zh/post/2022-08-15/</link>
       <pubDate>Mon, 15 Aug 2022 00:00:00 +0000</pubDate>
-      <guid>https://doubibobo.github.io/zh/post/2022-08-15/</guid>
+      <guid>https://2oil.top/zh/post/2022-08-15/</guid>
       <description>&lt;h5 id=&#34;1-motivation&#34;&gt;1. Motivation&lt;/h5&gt;
 &lt;p&gt;作者认为：很多视频-文本任务都蕴含着不同粒度的信息，如：视频帧-单词、片段-句子、视频-段落，每个都包含了不同粒度的语义信息。&lt;/p&gt;
 &lt;p&gt;本文解决的问题是：1）如何有效利用层次化的信息；2）如何建模不同粒度、不同模态数据之间的信息交互。&lt;/p&gt;
@@ -231,9 +232,9 @@ $$&lt;/p&gt;
     
     <item>
       <title>论文阅读——多模态情感分析（三）</title>
-      <link>https://doubibobo.github.io/zh/post/2022-07-04/</link>
+      <link>https://2oil.top/zh/post/2022-07-04/</link>
       <pubDate>Mon, 04 Jul 2022 00:00:00 +0000</pubDate>
-      <guid>https://doubibobo.github.io/zh/post/2022-07-04/</guid>
+      <guid>https://2oil.top/zh/post/2022-07-04/</guid>
       <description>&lt;p&gt;[TOC]&lt;/p&gt;
 &lt;h5 id=&#34;icassp-2022语音情感分析论文列表icassp2022_paper_list&#34;&gt;&lt;a href=&#34;#icassp2022_paper_list&#34;&gt;ICASSP 2022语音情感分析论文列表&lt;/a&gt;&lt;/h5&gt;
 &lt;ul&gt;
@@ -348,9 +349,9 @@ $$&lt;/p&gt;
     
     <item>
       <title>论文阅读——多模态情感分析（二）</title>
-      <link>https://doubibobo.github.io/zh/post/2022-07-03/</link>
+      <link>https://2oil.top/zh/post/2022-07-03/</link>
       <pubDate>Sun, 03 Jul 2022 00:00:00 +0000</pubDate>
-      <guid>https://doubibobo.github.io/zh/post/2022-07-03/</guid>
+      <guid>https://2oil.top/zh/post/2022-07-03/</guid>
       <description>&lt;h3 id=&#34;11-动机&#34;&gt;1.1 动机&lt;/h3&gt;
 &lt;h4 id=&#34;111-emotion的定义&#34;&gt;1.1.1 emotion的定义&lt;/h4&gt;
 &lt;ol&gt;
@@ -457,9 +458,9 @@ $CCC(y, \hat y) = \frac{2Cov(y, \hat y)}{\sigma_{y}^{2} + \sigma_{\hat y}^{2} + 
     
     <item>
       <title>炼丹技巧-对抗训练</title>
-      <link>https://doubibobo.github.io/zh/post/2022-06-29/</link>
+      <link>https://2oil.top/zh/post/2022-06-29/</link>
       <pubDate>Wed, 29 Jun 2022 00:00:00 +0000</pubDate>
-      <guid>https://doubibobo.github.io/zh/post/2022-06-29/</guid>
+      <guid>https://2oil.top/zh/post/2022-06-29/</guid>
       <description>&lt;h3 id=&#34;fgm&#34;&gt;FGM&lt;/h3&gt;
 &lt;pre&gt;&lt;code&gt;class FGM:
     &amp;quot;&amp;quot;&amp;quot;
@@ -598,9 +599,9 @@ $CCC(y, \hat y) = \frac{2Cov(y, \hat y)}{\sigma_{y}^{2} + \sigma_{\hat y}^{2} + 
     
     <item>
       <title>炼丹技巧-EMA（指数移动平均）</title>
-      <link>https://doubibobo.github.io/zh/post/2022-06-27/</link>
+      <link>https://2oil.top/zh/post/2022-06-27/</link>
       <pubDate>Mon, 27 Jun 2022 00:00:00 +0000</pubDate>
-      <guid>https://doubibobo.github.io/zh/post/2022-06-27/</guid>
+      <guid>https://2oil.top/zh/post/2022-06-27/</guid>
       <description>&lt;h3 id=&#34;原理&#34;&gt;原理&lt;/h3&gt;
 &lt;blockquote&gt;
 &lt;p&gt;来自于参考文献[1]&lt;/p&gt;
@@ -676,9 +677,9 @@ $CCC(y, \hat y) = \frac{2Cov(y, \hat y)}{\sigma_{y}^{2} + \sigma_{\hat y}^{2} + 
     
     <item>
       <title>Combining cross-modal knowledge transfer and semi-supervised learning for speech emotion recognition</title>
-      <link>https://doubibobo.github.io/zh/publication/kbs2021/</link>
+      <link>https://2oil.top/zh/publication/kbs2021/</link>
       <pubDate>Mon, 11 Oct 2021 00:00:00 +0000</pubDate>
-      <guid>https://doubibobo.github.io/zh/publication/kbs2021/</guid>
+      <guid>https://2oil.top/zh/publication/kbs2021/</guid>
       <description>&lt;!-- &lt;div class=&#34;alert alert-note&#34;&gt;
   &lt;div&gt;
     Click the &lt;em&gt;Cite&lt;/em&gt; button above to demo the feature to enable visitors to import publication metadata into their reference management software.
@@ -698,9 +699,9 @@ $CCC(y, \hat y) = \frac{2Cov(y, \hat y)}{\sigma_{y}^{2} + \sigma_{\hat y}^{2} + 
     
     <item>
       <title>分类问题中的相关指标</title>
-      <link>https://doubibobo.github.io/zh/post/2020-07-20/</link>
+      <link>https://2oil.top/zh/post/2020-07-20/</link>
       <pubDate>Mon, 20 Jul 2020 00:00:00 +0000</pubDate>
-      <guid>https://doubibobo.github.io/zh/post/2020-07-20/</guid>
+      <guid>https://2oil.top/zh/post/2020-07-20/</guid>
       <description>&lt;table&gt;
 &lt;thead&gt;
 &lt;tr&gt;
@@ -769,9 +770,9 @@ $$ f = \frac{\sum_i{f_i}}{number_{type}} $$&lt;/p&gt;
     
     <item>
       <title>论文阅读——多模态情感分析（一）</title>
-      <link>https://doubibobo.github.io/zh/post/2020-07-16/</link>
+      <link>https://2oil.top/zh/post/2020-07-16/</link>
       <pubDate>Thu, 16 Jul 2020 00:00:00 +0000</pubDate>
-      <guid>https://doubibobo.github.io/zh/post/2020-07-16/</guid>
+      <guid>https://2oil.top/zh/post/2020-07-16/</guid>
       <description>&lt;h3 id=&#34;__文章一memory-fusion-network-for-multi-view-sequential-learningzadeh2018__&#34;&gt;&lt;strong&gt;文章一：Memory Fusion Network for Multi-view Sequential Learning[@Zadeh2018]&lt;/strong&gt;&lt;/h3&gt;
 &lt;blockquote&gt;
 &lt;p&gt;2018年AAAI会议文章，主要工作是构造了针对多模态数据的MFN&lt;/p&gt;
@@ -830,36 +831,36 @@ $$ f = \frac{\sum_i{f_i}}{number_{type}} $$&lt;/p&gt;
     
     <item>
       <title>华中农业大学食品科学与技术学院研究生复试系统</title>
-      <link>https://doubibobo.github.io/zh/project/retest/</link>
+      <link>https://2oil.top/zh/project/retest/</link>
       <pubDate>Sat, 27 Apr 2019 00:00:00 +0000</pubDate>
-      <guid>https://doubibobo.github.io/zh/project/retest/</guid>
+      <guid>https://2oil.top/zh/project/retest/</guid>
       <description>&lt;p&gt;采用Flask框架实现，包括学生信息管理、试题信息管理、试卷生成与试题导出等模块&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>Privacy Policy</title>
-      <link>https://doubibobo.github.io/zh/privacy/</link>
+      <link>https://2oil.top/zh/privacy/</link>
       <pubDate>Thu, 28 Jun 2018 00:00:00 +0100</pubDate>
-      <guid>https://doubibobo.github.io/zh/privacy/</guid>
+      <guid>https://2oil.top/zh/privacy/</guid>
       <description>&lt;p&gt;Add your privacy policy here and set &lt;code&gt;draft: false&lt;/code&gt; to publish it. Otherwise, delete this file if you don&amp;rsquo;t need it.&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>Terms</title>
-      <link>https://doubibobo.github.io/zh/terms/</link>
+      <link>https://2oil.top/zh/terms/</link>
       <pubDate>Thu, 28 Jun 2018 00:00:00 +0100</pubDate>
-      <guid>https://doubibobo.github.io/zh/terms/</guid>
+      <guid>https://2oil.top/zh/terms/</guid>
       <description>&lt;p&gt;Add your terms here and set &lt;code&gt;draft: false&lt;/code&gt; to publish it. Otherwise, delete this file if you don&amp;rsquo;t need it.&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>Ext2 文件系统仿真</title>
-      <link>https://doubibobo.github.io/zh/project/ext2-fs/</link>
+      <link>https://2oil.top/zh/project/ext2-fs/</link>
       <pubDate>Wed, 27 Jun 2018 00:00:00 +0000</pubDate>
-      <guid>https://doubibobo.github.io/zh/project/ext2-fs/</guid>
+      <guid>https://2oil.top/zh/project/ext2-fs/</guid>
       <description>&lt;p&gt;该项目模仿早期Linux版本所采用的的Ext2文件系统，通过8.1M的文件模拟磁盘空间，实现文件系统对磁盘管理、内存管理的仿真。&lt;/p&gt;
 &lt;p&gt;磁盘管理中将每一个物理块定义为1K大小，逻辑块定义为1K大小。按照Ext2文件系统的格式，将系统划分为8个组，每个组大小为1024K，又包含超级块、组描述符、块位图、逻辑位图、内存索引节点和数据块。按照创建文件、创建目录、删除文件、删除目录、打开文件、读文件、写文件的算法分别实现相关函数。&lt;/p&gt;
 &lt;p&gt;内存管理中建立内存索引节点、系统打开文件表、用户打开文件表、进程数据结构。模拟进程操作文件时，通过内存索引节点信息，调用底层文件操作函数，依次填充系统打开文件表，用户打开文件表来实现进程对文件的操作。&lt;/p&gt;
@@ -868,9 +869,9 @@ $$ f = \frac{\sum_i{f_i}}{number_{type}} $$&lt;/p&gt;
     
     <item>
       <title>基于 Spring Boot 与 Vue 的山羊生产管理追溯平台</title>
-      <link>https://doubibobo.github.io/zh/project/springboot-vue/</link>
+      <link>https://2oil.top/zh/project/springboot-vue/</link>
       <pubDate>Fri, 27 Apr 2018 00:00:00 +0000</pubDate>
-      <guid>https://doubibobo.github.io/zh/project/springboot-vue/</guid>
+      <guid>https://2oil.top/zh/project/springboot-vue/</guid>
       <description>&lt;p&gt;该平台包括后端和前端两个部分，采用Spring boot MyBatis + Vue架构，数据库使用的是MySQL。&lt;/p&gt;
 &lt;p&gt;前期，负责登录模块和权限模块，登录模块使用内存数据库Redis来保存登录状态并提高访问速度; 权限模块采用角色权限管理模式，将用户、角色、权限进行关联，实现对总公司、省、市、县四层代理的管理。&lt;/p&gt;
 &lt;p&gt;后期，负责项目的需求迭代管理、模块设计、平台上线和版本维护。&lt;/p&gt;
@@ -879,26 +880,26 @@ $$ f = \frac{\sum_i{f_i}}{number_{type}} $$&lt;/p&gt;
     
     <item>
       <title>学生信息管理系统</title>
-      <link>https://doubibobo.github.io/zh/project/student-system/</link>
+      <link>https://2oil.top/zh/project/student-system/</link>
       <pubDate>Wed, 27 Dec 2017 00:00:00 +0000</pubDate>
-      <guid>https://doubibobo.github.io/zh/project/student-system/</guid>
+      <guid>https://2oil.top/zh/project/student-system/</guid>
       <description>&lt;p&gt;采用基于 JSP+JavaBean+Servlet 的MVC三层设计模式，将两个不同的学生数据库进行数据集成，从而达到系统综合应用效果。&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>单周期 CPU 的设计与实现</title>
-      <link>https://doubibobo.github.io/zh/project/single-cpu/</link>
+      <link>https://2oil.top/zh/project/single-cpu/</link>
       <pubDate>Tue, 27 Jun 2017 00:00:00 +0000</pubDate>
-      <guid>https://doubibobo.github.io/zh/project/single-cpu/</guid>
+      <guid>https://2oil.top/zh/project/single-cpu/</guid>
       <description></description>
     </item>
     
     <item>
       <title>华中农业大学植物科学与技术学院若干软件平台开发</title>
-      <link>https://doubibobo.github.io/zh/project/hzau-zky/</link>
+      <link>https://2oil.top/zh/project/hzau-zky/</link>
       <pubDate>Thu, 27 Apr 2017 00:00:00 +0000</pubDate>
-      <guid>https://doubibobo.github.io/zh/project/hzau-zky/</guid>
+      <guid>https://2oil.top/zh/project/hzau-zky/</guid>
       <description>&lt;p&gt;包括公共实验平台、设施设备管理平台、作物学实验&lt;/p&gt;
 &lt;p&gt;教学中心官网和作物学互动交流平台四个软件系统的后端部分设计与实现。&lt;/p&gt;
 </description>
@@ -906,18 +907,18 @@ $$ f = \frac{\sum_i{f_i}}{number_{type}} $$&lt;/p&gt;
     
     <item>
       <title>基于 Java 的 FTP 项目开发</title>
-      <link>https://doubibobo.github.io/zh/project/java-ftp/</link>
+      <link>https://2oil.top/zh/project/java-ftp/</link>
       <pubDate>Thu, 27 Apr 2017 00:00:00 +0000</pubDate>
-      <guid>https://doubibobo.github.io/zh/project/java-ftp/</guid>
+      <guid>https://2oil.top/zh/project/java-ftp/</guid>
       <description>&lt;p&gt;作为组长，组织三位同学分析项目需求，设计项目架构，明确FTP原理，统筹整个项目。前期，负责实现支持ASCII传输、二进制传输，主动方式传输、被动方式传输，断点续传功能的FTP客户端逻辑代码。后期，负责测试并撰写测试分析报告。&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>基于卷积神经网络的人脸识别系统</title>
-      <link>https://doubibobo.github.io/zh/project/face-recognition/</link>
+      <link>https://2oil.top/zh/project/face-recognition/</link>
       <pubDate>Thu, 27 Apr 2017 00:00:00 +0000</pubDate>
-      <guid>https://doubibobo.github.io/zh/project/face-recognition/</guid>
+      <guid>https://2oil.top/zh/project/face-recognition/</guid>
       <description>&lt;p&gt;该平台利用TensorFlow版的Keras库，搭建卷积神经网络，将前期获取的图像进行前期预处理，采用交叉验证方式训练神经网络，最终实现从实时视频流中识别人脸信息。&lt;/p&gt;
 &lt;p&gt;前期，主要负责相关文献的查询以及采用卷积神经网络方式的确定。&lt;/p&gt;
 &lt;p&gt;后期，主要负责图像预处理(灰度变换处理、均衡化处理、平滑处理)，以及卷积神经网络的构建和训练。&lt;/p&gt;
@@ -926,9 +927,9 @@ $$ f = \frac{\sum_i{f_i}}{number_{type}} $$&lt;/p&gt;
     
     <item>
       <title></title>
-      <link>https://doubibobo.github.io/zh/admin/config.yml</link>
+      <link>https://2oil.top/zh/admin/config.yml</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://doubibobo.github.io/zh/admin/config.yml</guid>
+      <guid>https://2oil.top/zh/admin/config.yml</guid>
       <description></description>
     </item>
     
