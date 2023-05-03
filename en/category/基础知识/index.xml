@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>基础知识 | Never-Ending Travel</title>
+    <link>https://2oil.top/en/category/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/</link>
+      <atom:link href="https://2oil.top/en/category/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/index.xml" rel="self" type="application/rss+xml" />
+    <description>基础知识</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright> Never-Ending Travel © 2021-2023. All Rights Reserved.  互联网ICP备案:鲁ICP备2021007223号-1   鲁公网安备37132702371387号   </copyright><lastBuildDate>Mon, 20 Jul 2020 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://2oil.top/media/icon_hud0ce531716296da633c567fb13fa2911_442_512x512_fill_lanczos_center_2.png</url>
+      <title>基础知识</title>
+      <link>https://2oil.top/en/category/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/</link>
+    </image>
+    
+    <item>
+      <title>分类问题中的相关指标</title>
+      <link>https://2oil.top/en/post/2020-07-20/</link>
+      <pubDate>Mon, 20 Jul 2020 00:00:00 +0000</pubDate>
+      <guid>https://2oil.top/en/post/2020-07-20/</guid>
+      <description>&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;real = 1&lt;/th&gt;
+&lt;th&gt;real = 0&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;predict = 1(TP)&lt;/td&gt;
+&lt;td&gt;predict = 1(FP)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;predict = 0(FN)&lt;/td&gt;
+&lt;td&gt;predict = 0(TN)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;ul&gt;
+&lt;li&gt;TP: true positive,正类预测正确&lt;/li&gt;
+&lt;li&gt;FN: false negative,正类预测错误&lt;/li&gt;
+&lt;li&gt;FP: false positive,负类预测错误&lt;/li&gt;
+&lt;li&gt;TN: true negative,负类预测正确&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;总的样本个数为：TP + FN + FP + TN&lt;/p&gt;
+&lt;h4 id=&#34;准确率accuracy&#34;&gt;准确率（accuracy）&lt;/h4&gt;
+&lt;p&gt;$${accuracy = \frac{TP + TN}{TP + FN + FP + TN}}$$&lt;/p&gt;
+&lt;h4 id=&#34;查准率或精度precision&#34;&gt;查准率或精度（precision）&lt;/h4&gt;
+&lt;p&gt;$$ precision = \frac{TP}{TP + FP} $$&lt;/p&gt;
+&lt;h4 id=&#34;查全率或召回率recall&#34;&gt;查全率或召回率（recall）&lt;/h4&gt;
+&lt;p&gt;$$ recall = \frac{TP}{TP + FN} $$&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;如何理解Precision/Recall
+假设100癌症训练集中，只有1例为癌症。如果模型永远预测y=0，则模型的Precision=99/100，很高。但Recall=0/1=0,非常低。
+所以单纯用Precision来评价模型是不完整的，评价模型时必须用Precision/Recall两个值。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h4 id=&#34;f1指标&#34;&gt;F1指标&lt;/h4&gt;
+&lt;blockquote&gt;
+&lt;p&gt;综合了查准率（precision）和查全率（recall）的指标&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;$$
+F1 = \frac{2 * precision * recall}{precision + recall}
+$$&lt;/p&gt;
+&lt;p&gt;上述四种指标常用于二分类问题，对于多分类问题，常有以下指标：&lt;/p&gt;
+&lt;h4 id=&#34;macro-average&#34;&gt;Macro Average&lt;/h4&gt;
+&lt;blockquote&gt;
+&lt;p&gt;综合过后进行取平均值的计算, 包括:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Macro-accuracy&lt;br&gt;
+Macro-precision&lt;br&gt;
+Macro-recall&lt;br&gt;
+Macro-F1&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;$$ precision_i = \frac{TP}{TP + FP}, \ for \ i &amp;lt; number_{type} $$
+$$ recall_i = \frac{TP}{TP + FN}, \ for \ i &amp;lt; number_{type} $$
+$$ f_i = \frac{2 * precision * recall}{precision + reacll}, \ for \ i &amp;lt; number_{type} $$&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;最终的求解结果&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;$$ precision = \frac{\sum_i{precision_i}}{number_{type}} $$
+$$ recall = \frac{\sum_i{recall_i}}{number_{type}} $$
+$$ f = \frac{\sum_i{f_i}}{number_{type}} $$&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

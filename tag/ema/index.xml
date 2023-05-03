@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>EMA | Never-Ending Travel</title>
+    <title>EMA | 大道之行</title>
     <link>https://2oil.top/tag/ema/</link>
       <atom:link href="https://2oil.top/tag/ema/index.xml" rel="self" type="application/rss+xml" />
     <description>EMA</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© 2021-2023 深度学习两滴油 版权所有. 鲁ICP备2021007223号-1 鲁公网安备37132702371387号
-  </copyright><lastBuildDate>Mon, 27 Jun 2022 00:00:00 +0000</lastBuildDate>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>zh-Hans</language><copyright>深度学习两滴油 © 2021-2023. All Rights Reserved.  互联网ICP备案:鲁ICP备2021007223号-1   鲁公网安备37132702371387号   </copyright><lastBuildDate>Mon, 27 Jun 2022 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://2oil.top/media/icon_hud0ce531716296da633c567fb13fa2911_442_512x512_fill_lanczos_center_2.png</url>
       <title>EMA</title>

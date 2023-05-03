@@ -1,37 +1,16 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Never-Ending Travel</title>
+    <title>大道之行</title>
     <link>https://2oil.top/</link>
       <atom:link href="https://2oil.top/index.xml" rel="self" type="application/rss+xml" />
-    <description>Never-Ending Travel</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© 2021-2023 深度学习两滴油 版权所有. 鲁ICP备2021007223号-1 鲁公网安备37132702371387号
-  </copyright><lastBuildDate>Sat, 01 Jun 2030 13:00:00 +0000</lastBuildDate>
+    <description>大道之行</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>zh-Hans</language><copyright>深度学习两滴油 © 2021-2023. All Rights Reserved.  互联网ICP备案:鲁ICP备2021007223号-1   鲁公网安备37132702371387号   </copyright><lastBuildDate>Sun, 05 Mar 2023 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://2oil.top/media/icon_hud0ce531716296da633c567fb13fa2911_442_512x512_fill_lanczos_center_2.png</url>
-      <title>Never-Ending Travel</title>
+      <title>大道之行</title>
       <link>https://2oil.top/</link>
     </image>
-    
-    <item>
-      <title>Example Talk</title>
-      <link>https://2oil.top/talk/example-talk/</link>
-      <pubDate>Sat, 01 Jun 2030 13:00:00 +0000</pubDate>
-      <guid>https://2oil.top/talk/example-talk/</guid>
-      <description>&lt;div class=&#34;alert alert-note&#34;&gt;
-  &lt;div&gt;
-    Click on the &lt;strong&gt;Slides&lt;/strong&gt; button above to view the built-in slides feature.
-  &lt;/div&gt;
-&lt;/div&gt;
-&lt;p&gt;Slides can be added in a few ways:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Create&lt;/strong&gt; slides using Wowchemy&amp;rsquo;s &lt;a href=&#34;https://wowchemy.com/docs/managing-content/#create-slides&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;em&gt;Slides&lt;/em&gt;&lt;/a&gt; feature and link using &lt;code&gt;slides&lt;/code&gt; parameter in the front matter of the talk file&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Upload&lt;/strong&gt; an existing slide deck to &lt;code&gt;static/&lt;/code&gt; and link using &lt;code&gt;url_slides&lt;/code&gt; parameter in the front matter of the talk file&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Embed&lt;/strong&gt; your slides (e.g. Google Slides) or presentation video on this page using &lt;a href=&#34;https://wowchemy.com/docs/writing-markdown-latex/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;shortcodes&lt;/a&gt;.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Further event details, including &lt;a href=&#34;https://wowchemy.com/docs/writing-markdown-latex/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;page elements&lt;/a&gt; such as image galleries, can be added to the body of this page.&lt;/p&gt;
-</description>
-    </item>
     
     <item>
       <title>MFID-Net: Multi-scaled feature-fused image dehazing via dynamic weights</title>
@@ -176,6 +155,14 @@ Abstract: Emotion recognition in conversation (ERC) is a crucial component in af
 &lt;p&gt;$\beta^{(l)}=\log{(\frac{\eta}{l} + 1)}$&lt;/p&gt;
 &lt;p&gt;$\mathcal{L}$是恒等映射 (identify mapping)，是一种残差机制&lt;/p&gt;
 </description>
+    </item>
+    
+    <item>
+      <title>论文阅读——模态缺失任务</title>
+      <link>https://2oil.top/post/2023-04-01/</link>
+      <pubDate>Tue, 23 Aug 2022 00:00:00 +0000</pubDate>
+      <guid>https://2oil.top/post/2023-04-01/</guid>
+      <description></description>
     </item>
     
     <item>
@@ -846,102 +833,7 @@ $$ f = \frac{\sum_i{f_i}}{number_{type}} $$&lt;/p&gt;
       <link>https://2oil.top/project/retest/</link>
       <pubDate>Sat, 27 Apr 2019 00:00:00 +0000</pubDate>
       <guid>https://2oil.top/project/retest/</guid>
-      <description>&lt;p&gt;采用 Flask 框架实现，包括学生信息管理、试题信息管 理、试卷生成与试题导出等模块&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Welcome to Wowchemy, the website builder for Hugo</title>
-      <link>https://2oil.top/post/getting-started/</link>
-      <pubDate>Thu, 13 Dec 2018 00:00:00 +0000</pubDate>
-      <guid>https://2oil.top/post/getting-started/</guid>
-      <description>&lt;h2 id=&#34;overview&#34;&gt;Overview&lt;/h2&gt;
-&lt;ol&gt;
-&lt;li&gt;The Wowchemy website builder for Hugo, along with its starter templates, is designed for professional creators, educators, and teams/organizations - although it can be used to create any kind of site&lt;/li&gt;
-&lt;li&gt;The template can be modified and customised to suit your needs. It&amp;rsquo;s a good platform for anyone looking to take control of their data and online identity whilst having the convenience to start off with a &lt;strong&gt;no-code solution (write in Markdown and customize with YAML parameters)&lt;/strong&gt; and having &lt;strong&gt;flexibility to later add even deeper personalization with HTML and CSS&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;You can work with all your favourite tools and apps with hundreds of plugins and integrations to speed up your workflows, interact with your readers, and much more&lt;/li&gt;
-&lt;/ol&gt;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-&lt;figure  id=&#34;figure-the-template-is-mobile-first-with-a-responsive-design-to-ensure-that-your-site-looks-stunning-on-every-device&#34;&gt;
-  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://raw.githubusercontent.com/wowchemy/wowchemy-hugo-modules/master/academic.png&#34; alt=&#34;The template is mobile first with a responsive design to ensure that your site looks stunning on every device.&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
-  &lt;/div&gt;&lt;figcaption&gt;
-      The template is mobile first with a responsive design to ensure that your site looks stunning on every device.
-    &lt;/figcaption&gt;&lt;/figure&gt;
-&lt;h2 id=&#34;get-started&#34;&gt;Get Started&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;👉 &lt;a href=&#34;https://wowchemy.com/templates/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;Create a new site&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;📚 &lt;a href=&#34;https://wowchemy.com/docs/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;Personalize your site&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;💬 &lt;a href=&#34;https://discord.gg/z8wNYzb&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Chat with the &lt;strong&gt;Wowchemy community&lt;/strong&gt;&lt;/a&gt; or &lt;a href=&#34;https://discourse.gohugo.io&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;Hugo community&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;🐦 Twitter: &lt;a href=&#34;https://twitter.com/wowchemy&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;@wowchemy&lt;/a&gt; &lt;a href=&#34;https://twitter.com/GeorgeCushen&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;@GeorgeCushen&lt;/a&gt; &lt;a href=&#34;https://twitter.com/search?q=%28%23MadeWithWowchemy%20OR%20%23MadeWithAcademic%29&amp;amp;src=typed_query&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;#MadeWithWowchemy&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;💡 &lt;a href=&#34;https://github.com/wowchemy/wowchemy-hugo-modules/issues&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Request a &lt;strong&gt;feature&lt;/strong&gt; or report a &lt;strong&gt;bug&lt;/strong&gt; for &lt;em&gt;Wowchemy&lt;/em&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;⬆️ &lt;strong&gt;Updating Wowchemy?&lt;/strong&gt; View the &lt;a href=&#34;https://wowchemy.com/docs/guide/update/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Update Guide&lt;/a&gt; and &lt;a href=&#34;https://wowchemy.com/updates/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Release Notes&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;crowd-funded-open-source-software&#34;&gt;Crowd-funded open-source software&lt;/h2&gt;
-&lt;p&gt;To help us develop this template and software sustainably under the MIT license, we ask all individuals and businesses that use it to help support its ongoing maintenance and development via sponsorship.&lt;/p&gt;
-&lt;h3 id=&#34;-click-here-to-become-a-sponsor-and-help-support-wowchemys-future-httpswowchemycomplans&#34;&gt;&lt;a href=&#34;https://wowchemy.com/plans/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;❤️ Click here to become a sponsor and help support Wowchemy&amp;rsquo;s future ❤️&lt;/a&gt;&lt;/h3&gt;
-&lt;p&gt;As a token of appreciation for sponsoring, you can &lt;strong&gt;unlock &lt;a href=&#34;https://wowchemy.com/plans/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;these&lt;/a&gt; awesome rewards and extra features 🦄✨&lt;/strong&gt;&lt;/p&gt;
-&lt;h2 id=&#34;ecosystem&#34;&gt;Ecosystem&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;&lt;a href=&#34;https://github.com/wowchemy/hugo-academic-cli&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Hugo Academic CLI&lt;/a&gt;:&lt;/strong&gt; Automatically import publications from BibTeX&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;inspiration&#34;&gt;Inspiration&lt;/h2&gt;
-&lt;p&gt;&lt;a href=&#34;https://academic-demo.netlify.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Check out the latest &lt;strong&gt;demo&lt;/strong&gt;&lt;/a&gt; of what you&amp;rsquo;ll get in less than 10 minutes, or &lt;a href=&#34;https://wowchemy.com/user-stories/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;view the &lt;strong&gt;showcase&lt;/strong&gt;&lt;/a&gt; of personal, project, and business sites.&lt;/p&gt;
-&lt;h2 id=&#34;features&#34;&gt;Features&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Page builder&lt;/strong&gt; - Create &lt;em&gt;anything&lt;/em&gt; with &lt;a href=&#34;https://wowchemy.com/docs/page-builder/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;widgets&lt;/strong&gt;&lt;/a&gt; and &lt;a href=&#34;https://wowchemy.com/docs/writing-markdown-latex/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;elements&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Edit any type of content&lt;/strong&gt; - Blog posts, publications, talks, slides, projects, and more!&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Create content&lt;/strong&gt; in &lt;a href=&#34;https://wowchemy.com/docs/writing-markdown-latex/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;Markdown&lt;/strong&gt;&lt;/a&gt;, &lt;a href=&#34;https://wowchemy.com/docs/import/jupyter/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;Jupyter&lt;/strong&gt;&lt;/a&gt;, or &lt;a href=&#34;https://wowchemy.com/docs/install-locally/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;RStudio&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Plugin System&lt;/strong&gt; - Fully customizable &lt;a href=&#34;https://wowchemy.com/docs/customization/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;color&lt;/strong&gt; and &lt;strong&gt;font themes&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Display Code and Math&lt;/strong&gt; - Code highlighting and &lt;a href=&#34;https://en.wikibooks.org/wiki/LaTeX/Mathematics&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;LaTeX math&lt;/a&gt; supported&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Integrations&lt;/strong&gt; - &lt;a href=&#34;https://analytics.google.com&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Google Analytics&lt;/a&gt;, &lt;a href=&#34;https://disqus.com&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Disqus commenting&lt;/a&gt;, Maps, Contact Forms, and more!&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Beautiful Site&lt;/strong&gt; - Simple and refreshing one page design&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Industry-Leading SEO&lt;/strong&gt; - Help get your website found on search engines and social media&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Media Galleries&lt;/strong&gt; - Display your images and videos with captions in a customizable gallery&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Mobile Friendly&lt;/strong&gt; - Look amazing on every screen with a mobile friendly version of your site&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Multi-language&lt;/strong&gt; - 34+ language packs including English, 中文, and Português&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Multi-user&lt;/strong&gt; - Each author gets their own profile page&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Privacy Pack&lt;/strong&gt; - Assists with GDPR&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Stand Out&lt;/strong&gt; - Bring your site to life with animation, parallax backgrounds, and scroll effects&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;One-Click Deployment&lt;/strong&gt; - No servers. No databases. Only files.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;themes&#34;&gt;Themes&lt;/h2&gt;
-&lt;p&gt;Wowchemy and its templates come with &lt;strong&gt;automatic day (light) and night (dark) mode&lt;/strong&gt; built-in. Alternatively, visitors can choose their preferred mode - click the moon icon in the top right of the &lt;a href=&#34;https://academic-demo.netlify.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Demo&lt;/a&gt; to see it in action! Day/night mode can also be disabled by the site admin in &lt;code&gt;params.toml&lt;/code&gt;.&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;https://wowchemy.com/docs/customization&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Choose a stunning &lt;strong&gt;theme&lt;/strong&gt; and &lt;strong&gt;font&lt;/strong&gt;&lt;/a&gt; for your site. Themes are fully customizable.&lt;/p&gt;
-&lt;h2 id=&#34;license&#34;&gt;License&lt;/h2&gt;
-&lt;p&gt;Copyright 2016-present &lt;a href=&#34;https://georgecushen.com&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;George Cushen&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;Released under the &lt;a href=&#34;https://github.com/wowchemy/wowchemy-hugo-modules/blob/master/LICENSE.md&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;MIT&lt;/a&gt; license.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Privacy Policy</title>
-      <link>https://2oil.top/privacy/</link>
-      <pubDate>Thu, 28 Jun 2018 00:00:00 +0100</pubDate>
-      <guid>https://2oil.top/privacy/</guid>
-      <description>&lt;p&gt;Add your privacy policy here and set &lt;code&gt;draft: false&lt;/code&gt; to publish it. Otherwise, delete this file if you don&amp;rsquo;t need it.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Terms</title>
-      <link>https://2oil.top/terms/</link>
-      <pubDate>Thu, 28 Jun 2018 00:00:00 +0100</pubDate>
-      <guid>https://2oil.top/terms/</guid>
-      <description>&lt;p&gt;Add your terms here and set &lt;code&gt;draft: false&lt;/code&gt; to publish it. Otherwise, delete this file if you don&amp;rsquo;t need it.&lt;/p&gt;
+      <description>&lt;p&gt;采用Flask框架实现，包括学生信息管理、试题信息管理、试卷生成与试题导出等模块&lt;/p&gt;
 </description>
     </item>
     
@@ -950,9 +842,9 @@ $$ f = \frac{\sum_i{f_i}}{number_{type}} $$&lt;/p&gt;
       <link>https://2oil.top/project/ext2-fs/</link>
       <pubDate>Wed, 27 Jun 2018 00:00:00 +0000</pubDate>
       <guid>https://2oil.top/project/ext2-fs/</guid>
-      <description>&lt;p&gt;该项目模仿早期 Linux 版本所采用的的 Ext2 文件系统，通过 8.1M 的文件模拟磁盘空间，实现文件系统 对磁盘管理、内存管理的仿真。&lt;/p&gt;
-&lt;p&gt;磁盘管理中将每一个物理块定义为 1K 大小，逻辑块定义为 1K 大小。按照 Ext2 文件系统的格式，将系 统划分为 8 个组，每个组大小为 1024K，又包含超级块、组描述符、块位图、逻辑位图、内存索引节点和 数据块。按照创建文件、创建目录、删除文件、删除目录、打开文件、读文件、写文件的算法分别实现相关 函数。&lt;/p&gt;
-&lt;p&gt;内存管理中建立内存索引节点、系统打开文件表、用户打开文件表、进程数据结构。模拟进程操作文件时， 通过内存索引节点信息，调用底层文件操作函数，依次填充系统打开文件表，用户打开文件表来实现进程 对文件的操作。&lt;/p&gt;
+      <description>&lt;p&gt;该项目模仿早期Linux版本所采用的的Ext2文件系统，通过8.1M的文件模拟磁盘空间，实现文件系统对磁盘管理、内存管理的仿真。&lt;/p&gt;
+&lt;p&gt;磁盘管理中将每一个物理块定义为1K大小，逻辑块定义为1K大小。按照Ext2文件系统的格式，将系统划分为8个组，每个组大小为1024K，又包含超级块、组描述符、块位图、逻辑位图、内存索引节点和数据块。按照创建文件、创建目录、删除文件、删除目录、打开文件、读文件、写文件的算法分别实现相关函数。&lt;/p&gt;
+&lt;p&gt;内存管理中建立内存索引节点、系统打开文件表、用户打开文件表、进程数据结构。模拟进程操作文件时，通过内存索引节点信息，调用底层文件操作函数，依次填充系统打开文件表，用户打开文件表来实现进程对文件的操作。&lt;/p&gt;
 </description>
     </item>
     
@@ -961,8 +853,8 @@ $$ f = \frac{\sum_i{f_i}}{number_{type}} $$&lt;/p&gt;
       <link>https://2oil.top/project/springboot-vue/</link>
       <pubDate>Fri, 27 Apr 2018 00:00:00 +0000</pubDate>
       <guid>https://2oil.top/project/springboot-vue/</guid>
-      <description>&lt;p&gt;该平台包括后端和前端两个部分，采用 Spring boot MyBatis + Vue 架构，数据库使用的是 MySQL。&lt;/p&gt;
-&lt;p&gt;前期，负责登录模块和权限模块，登录模块使用内存数据库 Redis 来保存登录状态并提高访问速度; 权限 模块采用角色权限管理模式，将用户、角色、权限进行关联，实现对总公司、省、市、县四层代理的管理。&lt;/p&gt;
+      <description>&lt;p&gt;该平台包括后端和前端两个部分，采用Spring boot MyBatis + Vue架构，数据库使用的是MySQL。&lt;/p&gt;
+&lt;p&gt;前期，负责登录模块和权限模块，登录模块使用内存数据库Redis来保存登录状态并提高访问速度; 权限模块采用角色权限管理模式，将用户、角色、权限进行关联，实现对总公司、省、市、县四层代理的管理。&lt;/p&gt;
 &lt;p&gt;后期，负责项目的需求迭代管理、模块设计、平台上线和版本维护。&lt;/p&gt;
 </description>
     </item>
@@ -972,7 +864,7 @@ $$ f = \frac{\sum_i{f_i}}{number_{type}} $$&lt;/p&gt;
       <link>https://2oil.top/project/student-system/</link>
       <pubDate>Wed, 27 Dec 2017 00:00:00 +0000</pubDate>
       <guid>https://2oil.top/project/student-system/</guid>
-      <description>&lt;p&gt;采用基于 JSP+JavaBean+Servlet 的 MVC 三层设计模式，将两个不同的学生数据库进 行数据集成，从而达到系统综合应用效果。&lt;/p&gt;
+      <description>&lt;p&gt;采用基于 JSP+JavaBean+Servlet 的MVC三层设计模式，将两个不同的学生数据库进行数据集成，从而达到系统综合应用效果。&lt;/p&gt;
 </description>
     </item>
     
@@ -999,7 +891,7 @@ $$ f = \frac{\sum_i{f_i}}{number_{type}} $$&lt;/p&gt;
       <link>https://2oil.top/project/java-ftp/</link>
       <pubDate>Thu, 27 Apr 2017 00:00:00 +0000</pubDate>
       <guid>https://2oil.top/project/java-ftp/</guid>
-      <description>&lt;p&gt;作为组长，组织三位同学分析项目需求，设计项目架构，明确 FTP 原理，统筹整个项目。前期，负责实现支持 ASCII 传输、二进制传输，主动方式传输、被动方式传输，断点续传功能的FTP客户端逻辑代码。后期，负责测试并撰写测试分析报告。&lt;/p&gt;
+      <description>&lt;p&gt;作为组长，组织三位同学分析项目需求，设计项目架构，明确FTP原理，统筹整个项目。前期，负责实现支持ASCII传输、二进制传输，主动方式传输、被动方式传输，断点续传功能的FTP客户端逻辑代码。后期，负责测试并撰写测试分析报告。&lt;/p&gt;
 </description>
     </item>
     
@@ -1008,9 +900,9 @@ $$ f = \frac{\sum_i{f_i}}{number_{type}} $$&lt;/p&gt;
       <link>https://2oil.top/project/face-recognition/</link>
       <pubDate>Thu, 27 Apr 2017 00:00:00 +0000</pubDate>
       <guid>https://2oil.top/project/face-recognition/</guid>
-      <description>&lt;p&gt;该平台利用 TensorFlow 版的 Keras 库，搭建卷积神经网络，将前期获取的图像进行前期预处理，采用交叉验证方式训练神经网络，最终实现从实时视频流中识别人脸信息。&lt;/p&gt;
+      <description>&lt;p&gt;该平台利用TensorFlow版的Keras库，搭建卷积神经网络，将前期获取的图像进行前期预处理，采用交叉验证方式训练神经网络，最终实现从实时视频流中识别人脸信息。&lt;/p&gt;
 &lt;p&gt;前期，主要负责相关文献的查询以及采用卷积神经网络方式的确定。&lt;/p&gt;
-&lt;p&gt;后期，主要负责图像预处理 (灰度变换处理、均衡化处理、平滑处理)，以及卷积神经网络的构建和训练。&lt;/p&gt;
+&lt;p&gt;后期，主要负责图像预处理(灰度变换处理、均衡化处理、平滑处理)，以及卷积神经网络的构建和训练。&lt;/p&gt;
 </description>
     </item>
     

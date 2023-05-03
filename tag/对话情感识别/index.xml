@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>对话情感识别 | Never-Ending Travel</title>
+    <title>对话情感识别 | 大道之行</title>
     <link>https://2oil.top/tag/%E5%AF%B9%E8%AF%9D%E6%83%85%E6%84%9F%E8%AF%86%E5%88%AB/</link>
       <atom:link href="https://2oil.top/tag/%E5%AF%B9%E8%AF%9D%E6%83%85%E6%84%9F%E8%AF%86%E5%88%AB/index.xml" rel="self" type="application/rss+xml" />
     <description>对话情感识别</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© 2021-2023 深度学习两滴油 版权所有. 鲁ICP备2021007223号-1 鲁公网安备37132702371387号
-  </copyright><lastBuildDate>Tue, 23 Aug 2022 00:00:00 +0000</lastBuildDate>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>zh-Hans</language><copyright>深度学习两滴油 © 2021-2023. All Rights Reserved.  互联网ICP备案:鲁ICP备2021007223号-1   鲁公网安备37132702371387号   </copyright><lastBuildDate>Tue, 23 Aug 2022 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://2oil.top/media/icon_hud0ce531716296da633c567fb13fa2911_442_512x512_fill_lanczos_center_2.png</url>
       <title>对话情感识别</title>
@@ -134,6 +133,14 @@ Abstract: Emotion recognition in conversation (ERC) is a crucial component in af
 &lt;p&gt;$\beta^{(l)}=\log{(\frac{\eta}{l} + 1)}$&lt;/p&gt;
 &lt;p&gt;$\mathcal{L}$是恒等映射 (identify mapping)，是一种残差机制&lt;/p&gt;
 </description>
+    </item>
+    
+    <item>
+      <title>论文阅读——模态缺失任务</title>
+      <link>https://2oil.top/post/2023-04-01/</link>
+      <pubDate>Tue, 23 Aug 2022 00:00:00 +0000</pubDate>
+      <guid>https://2oil.top/post/2023-04-01/</guid>
+      <description></description>
     </item>
     
   </channel>
