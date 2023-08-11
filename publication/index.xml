@@ -5,7 +5,11 @@
     <link>https://2oil.top/publication/</link>
       <atom:link href="https://2oil.top/publication/index.xml" rel="self" type="application/rss+xml" />
     <description>Publications</description>
+<<<<<<< HEAD
     <generator>Wowchemy (https://wowchemy.com)</generator><language>zh-Hans</language><copyright>深度学习两滴油 © 2021-2023. All Rights Reserved.  互联网ICP备案:鲁ICP备2021007223号-1   鲁公网安备37132702371387号   </copyright><lastBuildDate>Wed, 02 Aug 2023 00:00:00 +0000</lastBuildDate>
+=======
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>zh-Hans</language><copyright>深度学习两滴油 © 2021-2023. All Rights Reserved.  互联网ICP备案:鲁ICP备2021007223号-1   鲁公网安备37132702371387号   </copyright><lastBuildDate>Sun, 05 Mar 2023 00:00:00 +0000</lastBuildDate>
+>>>>>>> 95bf82cbf1d861a143111149628ca941521b80be
     <image>
       <url>https://2oil.top/media/icon_hud0ce531716296da633c567fb13fa2911_442_512x512_fill_lanczos_center_2.png</url>
       <title>Publications</title>
@@ -13,6 +17,7 @@
     </image>
     
     <item>
+<<<<<<< HEAD
       <title>SKEAFN: Sentiment Knowledge Enhanced Attention Fusion Network for multimodal sentiment analysis</title>
       <link>https://2oil.top/publication/inffus2023/</link>
       <pubDate>Wed, 02 Aug 2023 00:00:00 +0000</pubDate>
@@ -79,6 +84,8 @@
     </item>
     
     <item>
+=======
+>>>>>>> 95bf82cbf1d861a143111149628ca941521b80be
       <title>MFID-Net: Multi-scaled feature-fused image dehazing via dynamic weights</title>
       <link>https://2oil.top/publication/displays2023/</link>
       <pubDate>Sun, 05 Mar 2023 00:00:00 +0000</pubDate>
@@ -122,6 +129,7 @@
 </description>
     </item>
     
+<<<<<<< HEAD
     <item>
       <title>SCLAV: Supervised Cross-modal Contrastive Learning for Audio-Visual Coding</title>
       <link>https://2oil.top/publication/mm2023/</link>
@@ -144,5 +152,7 @@
 </description>
     </item>
     
+=======
+>>>>>>> 95bf82cbf1d861a143111149628ca941521b80be
   </channel>
 </rss>
