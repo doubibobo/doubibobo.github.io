@@ -1,0 +1,1347 @@
+<!DOCTYPE html><html lang="en-us" >
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  
+  
+  
+    <meta name="generator" content="Wowchemy 5.1.0 for Hugo" />
+  
+
+  
+
+  
+  
+  
+  
+  
+    
+    
+    
+  
+  
+
+  <meta name="author" content="Chuanbo Zhu" />
+
+  
+  
+  
+    
+  
+  <meta name="description" content="ICASSP 2022 语音情感识别相关论文整理（speech emotion recognition)" />
+
+  
+    <link rel="alternate" hreflang="zh" href="https://2oil.top/post/2022-07-04/" />
+  
+  <link rel="alternate" hreflang="en-us" href="https://2oil.top/en/post/2022-07-04/" />
+
+  
+
+
+
+
+
+
+
+  
+
+
+
+
+  
+  
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  
+
+  
+  
+  
+    <meta name="theme-color" content="#1565c0" />
+  
+
+  
+  
+    
+    <script src="/js/mathjax-config.js"></script>
+  
+
+  
+  
+  
+  
+    
+    
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.9.0/css/academicons.min.css" integrity="sha512-W4yqoT1+8NLkinBLBZko+dFB2ZbHsYLDdr50VElllRcNt2Q4/GSs6u71UHKxB7S6JEMCp5Ve4xjh3eGQl/HRvg==" crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha256-FMvZuGapsJLjouA6k7Eo2lusoAX9i0ShlWFG6qt7SLc=" crossorigin="anonymous">
+
+    
+    
+
+    
+    
+    
+      
+    
+    
+      
+      
+        
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/styles/github.min.css" crossorigin="anonymous" title="hl-light" media="print" onload="this.media='all'">
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/styles/dracula.min.css" crossorigin="anonymous" title="hl-dark" media="print" onload="this.media='all'" disabled>
+        
+      
+    
+
+    
+    
+    
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.min.css" integrity="sha512-1xoFisiGdy9nvho8EgXuXvnpR5GAMSjFwp40gSRE3NwdUdIMIKuPa7bqoUhLD0O/5tPNhteAsE5XyyMi5reQVA==" crossorigin="anonymous" media="print" onload="this.media='all'">
+    
+
+    
+
+    
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" integrity="" crossorigin="anonymous" async></script>
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+  
+
+  
+  
+  
+    
+      
+      <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto+Mono&family=Roboto:wght@400;700&display=swap">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto+Mono&family=Roboto:wght@400;700&display=swap" media="print" onload="this.media='all'">
+    
+  
+
+  
+  
+  
+  
+  
+  <link rel="stylesheet" href="/css/wowchemy.ddb2a9c79d7760a321f1b5392a04566a.css" />
+
+  
+
+
+
+  
+
+  
+
+  
+
+
+
+
+  
+  
+  
+
+  
+
+  
+    <link rel="manifest" href="/en/index.webmanifest" />
+  
+
+  <link rel="icon" type="image/png" href="/media/icon_hud0ce531716296da633c567fb13fa2911_442_32x32_fill_lanczos_center_2.png" />
+  <link rel="apple-touch-icon" type="image/png" href="/media/icon_hud0ce531716296da633c567fb13fa2911_442_180x180_fill_lanczos_center_2.png" />
+
+  <link rel="canonical" href="https://2oil.top/en/post/2022-07-04/" />
+
+  
+  
+  
+  
+  
+  
+  
+  
+    
+    
+  
+  
+  <meta property="twitter:card" content="summary" />
+  
+  <meta property="og:site_name" content="Never-Ending Travel" />
+  <meta property="og:url" content="https://2oil.top/en/post/2022-07-04/" />
+  <meta property="og:title" content="论文阅读——多模态情感分析（三） | Never-Ending Travel" />
+  <meta property="og:description" content="ICASSP 2022 语音情感识别相关论文整理（speech emotion recognition)" /><meta property="og:image" content="https://2oil.top/media/icon_hud0ce531716296da633c567fb13fa2911_442_512x512_fill_lanczos_center_2.png" />
+    <meta property="twitter:image" content="https://2oil.top/media/icon_hud0ce531716296da633c567fb13fa2911_442_512x512_fill_lanczos_center_2.png" /><meta property="og:locale" content="en-us" />
+  
+    
+      <meta
+        property="article:published_time"
+        content="2022-07-04T00:00:00&#43;00:00"
+      />
+    
+    <meta property="article:modified_time" content="2022-07-06T22:20:00&#43;00:00">
+  
+
+  
+
+
+    
+
+
+
+
+
+
+  
+
+
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://2oil.top/en/post/2022-07-04/"
+  },
+  "headline": "论文阅读——多模态情感分析（三）",
+  
+  "datePublished": "2022-07-04T00:00:00Z",
+  "dateModified": "2022-07-06T22:20:00Z",
+  
+  "author": {
+    "@type": "Person",
+    "name": "Chuanbo Zhu"
+  },
+  
+  "publisher": {
+    "@type": "Organization",
+    "name": "Never-Ending Travel",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://2oil.top/media/icon_hud0ce531716296da633c567fb13fa2911_442_192x192_fill_lanczos_center_2.png"
+    }
+  },
+  "description": "ICASSP 2022 语音情感识别相关论文整理（speech emotion recognition)"
+}
+</script>
+
+  
+
+  
+
+  
+
+  
+
+
+
+
+
+  <title>论文阅读——多模态情感分析（三） | Never-Ending Travel</title>
+</head>
+
+
+<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" class="page-wrapper   " data-wc-page-id="1ad35cb65a76b24887d1136c6d558a1a" >
+
+  
+  
+  
+  
+  
+  
+  
+  
+  <script src="/js/wowchemy-init.min.f16be01fc8fb2b5885dd67ce942d1185.js"></script>
+
+  
+
+
+<aside class="search-modal" id="search">
+  <div class="container">
+    <section class="search-header">
+
+      <div class="row no-gutters justify-content-between mb-3">
+        <div class="col-6">
+          <h1>Search</h1>
+        </div>
+        <div class="col-6 col-search-close">
+          <a class="js-search" href="#" aria-label="Close"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div id="search-box">
+        
+        <input name="q" id="search-query" placeholder="Search..." autocapitalize="off"
+        autocomplete="off" autocorrect="off" spellcheck="false" type="search" class="form-control"
+        aria-label="Search...">
+        
+      </div>
+
+      
+      
+
+      
+
+    </section>
+    <section class="section-search-results">
+
+      <div id="search-hits">
+        
+      </div>
+
+    </section>
+  </div>
+</aside>
+
+
+
+  <div class="page-header">
+    
+
+
+
+
+
+
+
+
+
+
+
+
+<nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
+  <div class="container-xl">
+
+    
+    <div class="d-none d-lg-inline-flex">
+      <a class="navbar-brand" href="/en/">Never-Ending Travel</a>
+    </div>
+    
+
+    
+    <button type="button" class="navbar-toggler" data-toggle="collapse"
+            data-target="#navbar-content" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+    <span><i class="fas fa-bars"></i></span>
+    </button>
+    
+
+    
+    <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
+      <a class="navbar-brand" href="/en/">Never-Ending Travel</a>
+    </div>
+    
+
+    
+    
+    <div class="navbar-collapse main-menu-item collapse justify-content-start" id="navbar-content">
+
+      
+      <ul class="navbar-nav d-md-inline-flex">
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+            
+            
+            
+              
+            
+            
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/en/#about"><span>Home</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+            
+            
+            
+              
+            
+            
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/en/#posts"><span>Posts</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+            
+            
+            
+              
+            
+            
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/en/#featured"><span>Publications</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+            
+            
+            
+              
+            
+            
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/en/#competitions"><span>Competitions</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+            
+            
+            
+              
+            
+            
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/en/#projects"><span>Projects</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+            
+            
+            
+              
+            
+            
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/en/#contact"><span>Contact</span></a>
+        </li>
+
+        
+        
+
+      
+
+        
+      </ul>
+    </div>
+
+    <ul class="nav-icons navbar-nav flex-row ml-auto d-flex pl-md-2">
+
+      
+      
+        
+      
+
+      
+      
+      <li class="nav-item">
+        <a class="nav-link js-search" href="#" aria-label="Search"><i class="fas fa-search" aria-hidden="true"></i></a>
+      </li>
+      
+
+      
+      
+      <li class="nav-item dropdown theme-dropdown">
+        <a href="#" class="nav-link" data-toggle="dropdown" aria-haspopup="true" aria-label="Display preferences">
+          <i class="fas fa-moon" aria-hidden="true"></i>
+        </a>
+        <div class="dropdown-menu">
+          <a href="#" class="dropdown-item js-set-theme-light">
+            <span>Light</span>
+          </a>
+          <a href="#" class="dropdown-item js-set-theme-dark">
+            <span>Dark</span>
+          </a>
+          <a href="#" class="dropdown-item js-set-theme-auto">
+            <span>Automatic</span>
+          </a>
+        </div>
+      </li>
+      
+
+      
+      
+      <li class="nav-item dropdown i18n-dropdown">
+        <a href="#" class="nav-link " data-toggle="dropdown"
+           aria-haspopup="true" aria-label="Languages">
+          <i class="fas fa-globe mr-1" aria-hidden="true"></i></a>
+        <div class="dropdown-menu">
+          <div class="dropdown-item dropdown-item-active">
+            <span>English</span>
+          </div>
+          
+          <a class="dropdown-item" href="https://2oil.top/post/2022-07-04/">
+            <span>中文 (简体)</span>
+          </a>
+          
+        </div>
+      </li>
+      
+
+    </ul>
+
+  </div>
+</nav>
+
+
+  </div>
+
+  <div class="page-body">
+    <article class="article">
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+  
+  
+<div class="article-container pt-3">
+  <h1>论文阅读——多模态情感分析（三）</h1>
+
+  
+  <p class="page-subtitle">ICASSP 2022 语音情感识别相关论文整理</p>
+  
+
+  
+    
+
+
+<div class="article-metadata">
+
+  
+  
+  
+  
+  <div>
+    
+
+  <span class="author-highlighted">
+      Chuanbo Zhu</span>
+  </div>
+  
+  
+
+  
+  <span class="article-date">
+    
+    
+      
+          Last updated on
+      
+    
+    Jul 6, 2022
+  </span>
+  
+
+  
+
+  
+  <span class="middot-divider"></span>
+  <span class="article-reading-time">
+    3 min read
+  </span>
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+  
+  <span class="middot-divider"></span>
+  <span class="article-categories">
+    <i class="fas fa-folder mr-1"></i><a href="/en/category/%E5%A4%9A%E6%A8%A1%E6%80%81%E6%83%85%E6%84%9F%E5%88%86%E6%9E%90/">多模态情感分析</a>, <a href="/en/category/%E8%AF%AD%E9%9F%B3%E6%83%85%E6%84%9F%E5%88%86%E6%9E%90/">语音情感分析</a></span>
+  
+
+</div>
+
+    
+
+
+
+
+
+  
+</div>
+
+
+
+  <div class="article-container">
+
+    <div class="article-style">
+      <p>[TOC]</p>
+<h5 id="icassp-2022语音情感分析论文列表icassp2022_paper_list"><a href="#icassp2022_paper_list">ICASSP 2022语音情感分析论文列表</a></h5>
+<ul>
+<li>Representation Learning Through Cross-modal Conditional Teacher-student Training For Speech Emotion Recognition, Amazon AWS AI</li>
+<li>Speech Emotion Recognition Using Self-supervised Features, IBM Research AI</li>
+<li>Multi-stage Graph Representation Learning For Dialogue-level Speech Emotion Recognition, 天津大学</li>
+<li>Frontend Attributes Disentanglement For Speech Emotion Recognition, 中国科学技术大学, iFLYTEK</li>
+<li>Neural Architecture Search For Speech Emotion Recognition, 香港中文大学</li>
+<li>Climate and Weather: Inspecting Depression Detection Via Emotion Recognition, 剑桥大学</li>
+<li>A Commonsense Knowledge Enhanced Network with Retrospective Loss for Emotion Recognition in Spoken Dialog, 哈工大</li>
+</ul>
+<h6 id="1-representation-learning-through-cross-modal-conditional-teacher-student-training-for-speech-emotion-recognitionpaper1"><a href="#paper1">1. Representation Learning Through Cross-modal Conditional Teacher-student Training For Speech Emotion Recognition</a></h6>
+<blockquote>
+<p>作者单位: Amazon AWS AI;
+<a href="https://ieeexplore.ieee.org/document/9747754" target="_blank" rel="noopener">论文链接</a></p>
+</blockquote>
+<p>  虽然文本和语音的大规模预训练模型可以减少对大规模数据集的需求，但是如何在emotion recognition任务中使用基于预训练模型的representation还尚在研究。本文的研究表明：1）top-performing representations在emotion recognition中的主要差异在于valence (V维)，而activation (A维)和dominance (D维)的差异不大；2）在valence预测中，即使最优的HUBERT representation也弱于text-speech representation。</p>
+<p>  本文通过condition teacher-Student training的方式来向speech representation融入lexical information。实验用到的数据集包括<strong>MSP-Podcast corpus</strong>和<strong>IEMOCAP</strong>，concordance correlation coefficient (CCC)指标在audio-only场景下达到了SOTA的效果。
+<img src="./figures/iShot_2022-07-04_20.36.11.png" alt="avator">
+<img src="./figures/iShot_2022-07-04_20.36.38.png" alt="avator">
+<img src="./figures/iShot_2022-07-04_20.37.04.png" alt="avator"></p>
+<h6 id="2-speech-emotion-recognition-using-self-supervised-featurespaper2"><a href="#paper2">2. Speech Emotion Recognition Using Self-supervised Features</a></h6>
+<blockquote>
+<p>作者单位: IBM Research AI;
+<a href="https://ieeexplore.ieee.org/document/9747870" target="_blank" rel="noopener">论文链接</a></p>
+</blockquote>
+<p>  本文介绍了一个模块化的端到端(E2E) SER系统。该系统基于一种上下游架构范式，可以轻松使用/集成各种自监督预训练模块。<font color="#dd0000">实际上，本文模型就是五折交叉验证 + 预训练微调 + 特征聚合（Mean Average Pooling 和ECAPA-TDNN） + 模型聚合，感觉有点儿像比赛的trick。</font></p>
+<p>  数据集采用的是<strong>IEMOCAP</strong>。
+<img src="./figures/iShot_2022-07-04_20.21.56.png" alt="avator">
+<img src="./figures/iShot_2022-07-04_20.22.07.png" alt="avator">
+<img src="./figures/iShot_2022-07-04_20.22.20.png" alt="avator">
+<img src="./figures/iShot_2022-07-04_20.22.33.png" alt="avator">
+<img src="./figures/iShot_2022-07-04_20.22.54.png" alt="avator">
+<img src="./figures/iShot_2022-07-04_20.23.01.png" alt="avator"></p>
+<h6 id="3-multi-stage-graph-representation-learning-for-dialogue-level-speech-emotion-recognition">3. Multi-stage Graph Representation Learning For Dialogue-level Speech Emotion Recognition</h6>
+<blockquote>
+<p>作者单位: 天津大学;
+<a href="https://ieeexplore.ieee.org/document/9746237" target="_blank" rel="noopener">论文链接</a></p>
+</blockquote>
+<p>  随着语音情感识别技术的发展，目前的研究大多停留在话语层面，无法适应实际场景的需要。本文提出了一种着重于捕获对话级上下文信息的emotion recognition策略。该策略包含两个模块：1）对话多阶段图表示学习算法(DialogMSG)引入了从不同对话范围进行建模的多阶段图，以获取更有效的信息；2）包含utterance-level classifier和 dialogue-level classifier的双约束模块。</p>
+<p>  实验用到的数据集是<strong>IEMOCAP</strong>，dialogue atmosphere标签是该轮dialog的所有utterance中出现频率最高的emotion。 <font color="#dd0000">这样做的原因是作者认为对话的氛围与说话人情绪有很强的关系，但取标签的方式显得过于粗糙。尤其IEMOCAP是个表演型数据集（说话人针对特定的情绪进行表演，与真实场景有很大的差距），dialogue atmosphere标签准确率可能会很低。</font></p>
+<p><img src="./figures/iShot_2022-07-05_17.12.35.png" alt="avator">
+<img src="./figures/iShot_2022-07-05_17.13.42.png" alt="avator">
+<img src="./figures/iShot_2022-07-05_17.16.02.png" alt="avator">
+<img src="./figures/iShot_2022-07-05_17.16.14.png" alt="avator">
+<img src="./figures/iShot_2022-07-05_17.16.25.png" alt="avator">
+<img src="./figures/iShot_2022-07-05_17.16.33.png" alt="avator"></p>
+<h6 id="4-frontend-attributes-disentanglement-for-speech-emotion-recognition">4. Frontend Attributes Disentanglement For Speech Emotion Recognition</h6>
+<blockquote>
+<p>作者单位: 中国科学技术大学, iFLYTEK Research;
+<a href="https://ieeexplore.ieee.org/document/9746691" target="_blank" rel="noopener">论文链接</a></p>
+</blockquote>
+<p>  基于有限数据集的语音情感识别是一项具有挑战性的任务，因为语音信息除了包含情感外，还包含说话人、语义和语种等各种干扰属性。然而，由于说话人与情感属性之间的密切关系，只需对线性模型进行微调，就足以在预先训练的说话人识别(SR)前端提取的话语级嵌入(即向量和x向量)上获得良好的SER性能<font color="#dd0000">（作者的核心观点，后续模型设计和实现均以此为基础）</font>。 换言之，文章的<strong>motivation</strong>为：通过利用相关领域的大规模数据（说话人识别数据），克服现有标签SER数据不足的问题。</p>
+<p>  本文的主要工作包括：</p>
+<ul>
+<li>用双空间损失（dual space loss）来分解情感相关 ($R^{+}$) 和情感无关 ($R^{-}$) 空间；（<font color="#dd0000">这两个空间的获取方法值得注意，尤其是instance正则化之后的差操作，需要更深入的理解</font>）</li>
+<li>通过时频注意力机制来引入远程的上下文信息（long-range contextual information）;</li>
+<li>与先前基于风格分解（style disentangle）的方法不同，本文提出的方法可以直接应用到前端特征提取器上（<font color="#dd0000">主要指其它任务的大规模预训练模型</font>）。</li>
+</ul>
+<p>  实验采用的数据集是<strong>IEMOCAP</strong>。</p>
+<p><img src="./figures/iShot_2022-07-06_23.07.26.png" alt="avator">
+<img src="./figures/iShot_2022-07-06_23.07.36.png" alt="avator">
+<img src="./figures/iShot_2022-07-06_23.07.49.png" alt="avator"></p>
+<h6 id="5-neural-architecture-search-for-speech-emotion-recognition">5. Neural Architecture Search For Speech Emotion Recognition</h6>
+<blockquote>
+<p>作者单位: 香港中文大学;
+<a href="https://ieeexplore.ieee.org/document/9746155" target="_blank" rel="noopener">论文链接</a></p>
+</blockquote>
+<p>  本文提出了一种基于Neural Architecture Search (NAS) 的网络结构搜索算法，称为：统一路径丢弃策略 (uniform path dropout strategy)，主要就是将NAS原有的uniform path sampling替换为dropout。</p>
+<p>  所用数据集为IEMOCAP。</p>
+<p><img src="./figures/iShot_2022-07-06_23.23.13.png" alt="avator">
+<img src="./figures/iShot_2022-07-06_23.23.22.png" alt="avator">
+<img src="./figures/iShot_2022-07-06_23.23.36.png" alt="avator"></p>
+<h6 id="6-climate-and-weather-inspecting-depression-detection-via-emotion-recognition">6. Climate and Weather: Inspecting Depression Detection Via Emotion Recognition</h6>
+<blockquote>
+<p>作者单位: 剑桥大学;
+<a href="https://ieeexplore.ieee.org/document/9746634" target="_blank" rel="noopener">论文链接</a></p>
+</blockquote>
+<p>  情绪和抑郁之间存在着紧密的关系，因此作者将用于情绪识别的模型迁移到抑郁-健康状态的二分类检测中。作者实验后发现，情绪和抑郁的关系类似于天气和气候，也就有了题目中的Climate和Weather。</p>
+<p>  所用情绪识别数据集为：<strong>IEMOCAP/MOSEI</strong>；抑郁检测数据集为：<strong>DAIC-WOZ</strong>。</p>
+<p><img src="./figures/iShot_2022-07-07_10.51.47.png" alt="avator">
+<img src="./figures/iShot_2022-07-07_10.51.59.png" alt="avator">
+<img src="./figures/iShot_2022-07-07_10.52.06.png" alt="avator">
+<img src="./figures/iShot_2022-07-07_10.52.15.png" alt="avator"></p>
+<h6 id="7-a-commonsense-knowledge-enhanced-network-with-retrospective-loss-for-emotion-recognition-in-spoken-dialog">7. A Commonsense Knowledge Enhanced Network with Retrospective Loss for Emotion Recognition in Spoken Dialog</h6>
+<blockquote>
+<p>作者单位: 哈工大;
+<a href="https://ieeexplore.ieee.org/document/9746909" target="_blank" rel="noopener">论文链接</a></p>
+</blockquote>
+<p>   本文研究动机包括：1) 现有对话情感识别数据集 (Emotion Recognition in Spoken Dialog, ERSD) 规模都很小，限制了模型能力；2) 对话中表达的情感与先前的经验有关，这种经验可以是常识 (commonsense knowledge, Case #1 in Fig.1)，也可以是模型历史的判断 (model historical judgement, Case #2 in Fig.1)。</p>
+<p>  本文提出了CKE-Net来 1）层次化地进行对话建模——<font color="#dd0000">不同层特征的concate</font>；2）集成外部知识 (external knowledge integration)；3）回溯历史状态 (historical state retrospect)。其中， Knowledge Enhancement Module用的外部知识库是ConceptNet，知识表示方式为四元组&lt;concept1, relation, concept2, confidence&gt;，本文没有使用relation属性。</p>
+<p>   所用数据集为<strong>IEMOCAP</strong>和<strong>MELD</strong></p>
+<p><img src="./figures/iShot_2022-07-07_13.49.30.png" alt="avator">
+<img src="./figures/iShot_2022-07-07_13.49.41.png" alt="avator">
+<img src="./figures/iShot_2022-07-07_13.49.50.png" alt="avator">
+<img src="./figures/iShot_2022-07-07_13.50.20.png" alt="avator"></p>
+<h6 id="8-towards-transferable-speech-emotion-representation-on-loss-functions-for-cross-lingual-latent-representations">8. Towards Transferable Speech Emotion Representation: on Loss Functions for Cross-lingual Latent Representations</h6>
+<h6 id="9-is-cross-attention-preferable-to-self-attention-for-multi-modal-emotion-recognition">9. Is Cross-attention Preferable to Self-attention for Multi-modal Emotion Recognition?</h6>
+<h6 id="10-deepfake-speech-detection-through-emotion-recognition-a-semantic-approach">10. Deepfake Speech Detection Through Emotion Recognition: A Semantic Approach</h6>
+<h6 id="11-not-all-features-are-equal-selection-of-robust-features-for-speech-emotion-recognition-in-noisy-environments">11. Not All Features Are Equal: Selection of Robust Features for Speech Emotion Recognition in Noisy Environments</h6>
+<h6 id="12-domain-invariant-feature-learning-for-cross-corpus-speech-emotion-recognition">12. Domain-invariant Feature Learning for Cross Corpus Speech Emotion Recognition</h6>
+<h6 id="13-speech-emotion-recognition-with-co-attention-based-multi-level-acoustic-information">13. Speech Emotion Recognition with Co-attention Based Multi-level Acoustic Information</h6>
+<h6 id="14-multi-lingual-multi-task-speech-emotion-recognition-using-wav2vec-20">14. Multi-lingual Multi-task Speech Emotion Recognition Using Wav2vec 2.0</h6>
+<h6 id="15-selective-multi-task-learning-for-speech-emotion-recognition-using-corpora-of-different-styles">15. Selective Multi-task Learning for Speech Emotion Recognition Using Corpora of Different Styles</h6>
+<h6 id="16-enhancing-privacy-through-domain-adaptive-noise-injection-for-speech-emotion-recognition">16. Enhancing Privacy Through Domain Adaptive Noise Injection for Speech Emotion Recognition</h6>
+<h6 id="17-confidence-estimation-for-speech-emotion-recognition-based-on-the-relationship-between-emotion-categories-and-primitives">17. Confidence Estimation for Speech Emotion Recognition Based on the Relationship Between Emotion Categories and Primitives</h6>
+<h6 id="18-light-sernet-a-lightweight-fully-convolutional-neural-network-for-speech-emotion-recognition">18. Light-sernet: a Lightweight Fully Convolutional Neural Network for Speech Emotion Recognition</h6>
+<h6 id="19-key-sparse-transformer-for-multimodal-speech-emotion-recognition">19. Key-sparse Transformer for Multimodal Speech Emotion Recognition</h6>
+<h6 id="20-speaker-normalization-for-self-supervised-speech-emotion-recognition">20. Speaker Normalization for Self-supervised Speech Emotion Recognition</h6>
+
+    </div>
+
+    
+
+
+
+
+
+
+<div class="article-tags">
+  
+  <a class="badge badge-light" href="/en/tag/%E5%A4%9A%E6%A8%A1%E6%80%81%E6%83%85%E6%84%9F%E5%88%86%E6%9E%90/">多模态情感分析</a>
+  
+  <a class="badge badge-light" href="/en/tag/%E8%AF%AD%E9%9F%B3%E6%83%85%E6%84%9F%E5%88%86%E6%9E%90/">语音情感分析</a>
+  
+</div>
+
+
+
+<div class="share-box" aria-hidden="true">
+  <ul class="share">
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://twitter.com/intent/tweet?url=https://2oil.top/en/post/2022-07-04/&amp;text=%e8%ae%ba%e6%96%87%e9%98%85%e8%af%bb%e2%80%94%e2%80%94%e5%a4%9a%e6%a8%a1%e6%80%81%e6%83%85%e6%84%9f%e5%88%86%e6%9e%90%ef%bc%88%e4%b8%89%ef%bc%89" target="_blank" rel="noopener" class="share-btn-twitter">
+          <i class="fab fa-twitter"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://www.facebook.com/sharer.php?u=https://2oil.top/en/post/2022-07-04/&amp;t=%e8%ae%ba%e6%96%87%e9%98%85%e8%af%bb%e2%80%94%e2%80%94%e5%a4%9a%e6%a8%a1%e6%80%81%e6%83%85%e6%84%9f%e5%88%86%e6%9e%90%ef%bc%88%e4%b8%89%ef%bc%89" target="_blank" rel="noopener" class="share-btn-facebook">
+          <i class="fab fa-facebook"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="mailto:?subject=%e8%ae%ba%e6%96%87%e9%98%85%e8%af%bb%e2%80%94%e2%80%94%e5%a4%9a%e6%a8%a1%e6%80%81%e6%83%85%e6%84%9f%e5%88%86%e6%9e%90%ef%bc%88%e4%b8%89%ef%bc%89&amp;body=https://2oil.top/en/post/2022-07-04/" target="_blank" rel="noopener" class="share-btn-email">
+          <i class="fas fa-envelope"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://service.weibo.com/share/share.php?url=https://2oil.top/en/post/2022-07-04/&amp;title=%e8%ae%ba%e6%96%87%e9%98%85%e8%af%bb%e2%80%94%e2%80%94%e5%a4%9a%e6%a8%a1%e6%80%81%e6%83%85%e6%84%9f%e5%88%86%e6%9e%90%ef%bc%88%e4%b8%89%ef%bc%89" target="_blank" rel="noopener" class="share-btn-weibo">
+          <i class="fab fa-weibo"></i>
+        </a>
+      </li>
+    
+  </ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    
+
+
+
+  
+  
+  
+    
+  
+  
+  
+  <div class="media author-card content-widget-hr">
+    
+      
+      <a href="https://2oil.top/"><img class="avatar mr-3 avatar-circle" src="/en/authors/admin/avatar_hu0d5e270677351ef2042eea3b98190464_21895_270x270_fill_q75_lanczos_center.jpg" alt="Chuanbo Zhu"></a>
+    
+
+    <div class="media-body">
+      <h5 class="card-title"><a href="https://2oil.top/">Chuanbo Zhu</a></h5>
+      <h6 class="card-subtitle">PhD Candidate of Computer Science and Technology</h6>
+      <p class="card-text">My research interests include multimodal intelligence, sentiment analysis, emotion recognition and sarcasm detection</p>
+      <ul class="network-icon" aria-hidden="true">
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="/en/#contact" >
+        <i class="fas fa-envelope"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://github.com/doubibobo" target="_blank" rel="noopener">
+        <i class="fab fa-github"></i>
+      </a>
+    </li>
+  
+</ul>
+
+    </div>
+  </div>
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <div class="article-widget content-widget-hr">
+    <h3>Related</h3>
+    <ul>
+      
+      <li><a href="/en/post/2022-07-03/">论文阅读——多模态情感分析（二）</a></li>
+      
+      <li><a href="/en/post/2022-08-23/">论文阅读——ERC任务综述</a></li>
+      
+      <li><a href="/en/post/2020-07-16/">论文阅读——多模态情感分析（一）</a></li>
+      
+    </ul>
+  </div>
+  
+
+
+
+
+
+  </div>
+</article>
+  </div>
+
+  <div class="page-footer">
+    
+    
+    <div class="container">
+      <footer class="site-footer">
+
+  
+
+  
+
+  
+  <p class="powered-by">
+    <div style="padding-top:1.25em;padding-bottom:1.25em;position:relative">
+  <p> Never-Ending Travel © 2021-2023. All Rights Reserved.
+  <p>
+    <a href="https://beian.miit.gov.cn/">
+    互联网ICP备案:鲁ICP备2021007223号-1
+    </a>
+  </p>
+  <p>
+    <a href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=37132702371387" target="_blank" style="display:inline-block;text-decoration:none;height:20px;line-height:20px;">
+    <img src="https://img.alicdn.com/tfs/TB1..50QpXXXXX7XpXXXXXXXXXX-40-40.png" width="20" height="20" style="float:left;"/>
+    鲁公网安备37132702371387号
+    </a>
+  </p>
+</div>
+
+  </p>
+  
+
+  
+  
+
+
+
+
+
+
+  <p class="powered-by">
+    
+    
+    
+      
+      
+      
+      
+      
+      
+      Published with <a href="https://wowchemy.com/?utm_campaign=poweredby" target="_blank" rel="noopener">Wowchemy</a> — the free, <a href="https://github.com/wowchemy/wowchemy-hugo-modules" target="_blank" rel="noopener">open source</a> website builder that empowers creators.
+    
+  </p>
+</footer>
+
+    </div>
+    
+  </div>
+
+  
+<div id="modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Cite</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <pre><code class="tex hljs"></code></pre>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank">
+          <i class="fas fa-copy"></i> Copy
+        </a>
+        <a class="btn btn-outline-primary my-1 js-download-cite" href="#" target="_blank">
+          <i class="fas fa-download"></i> Download
+        </a>
+        <div id="modal-error"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+      
+
+    
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/instant.page/5.1.0/instantpage.min.js" integrity="sha512-1+qUtKoh9XZW7j+6LhRMAyOrgSQKenQ4mluTR+cvxXjP1Z54RxZuzstR/H9kgPXQsVB8IW7DMDFUJpzLjvhGSQ==" crossorigin="anonymous"></script>
+
+      
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js" integrity="sha256-lqvxZrPLtfffUl2G/e7szqSvPBILGbwmsGE1MKlOi0Q=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" integrity="sha256-CBrpuqrMhXwcLLUd5tvQ4euBHCdh7wGlDfNz8vbu/iI=" crossorigin="anonymous"></script>
+      
+
+      
+      
+
+      
+
+      
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/highlight.min.js" integrity="sha512-TDKKr+IvoqZnPzc3l35hdjpHD0m+b2EC2SrLEgKDRWpxf2rFCxemkgvJ5kfU48ip+Y+m2XVKyOCD85ybtlZDmw==" crossorigin="anonymous"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/languages/r.min.js"></script>
+        
+      
+
+    
+
+    
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.min.js" integrity="sha512-SeiQaaDh73yrb56sTW/RgVdi/mMqNeM2oBwubFHagc5BkixSpP1fvqF47mKzPGWYSSy4RwbBunrJBQ4Co8fRWA==" crossorigin="anonymous"></script>
+    
+
+    
+    
+
+    
+    
+    
+      
+      <script id="search-hit-fuse-template" type="text/x-template">
+        <div class="search-hit" id="summary-{{key}}">
+          <div class="search-hit-content">
+            <div class="search-hit-name">
+              <a href="{{relpermalink}}">{{title}}</a>
+              <div class="article-metadata search-hit-type">{{type}}</div>
+              <p class="search-hit-description">{{snippet}}</p>
+            </div>
+          </div>
+        </div>
+      </script>
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/3.2.1/fuse.min.js" integrity="sha256-VzgmKYmhsGNNN4Ph1kMW+BjoYJM2jV5i4IlFoeZA9XI=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js" integrity="sha256-4HLtjeVgH0eIB3aZ9mLYF6E8oU5chNdjU6p6rrXpl9U=" crossorigin="anonymous"></script>
+      
+    
+
+    
+    
+
+    
+    
+    
+    
+
+    
+    <script src="/js/bootstrap.bundle.min.6aed84840afc03ab4d5750157f69c120.js"></script>
+
+    
+    
+      
+      
+      
+      
+      
+      
+      
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+      
+      
+    
+    
+    <script src="/en/js/wowchemy.min.0c842af1bab156fdfbddaf7a6352b608.js"></script>
+
+    
+
+
+
+
+
+
+</body>
+</html>

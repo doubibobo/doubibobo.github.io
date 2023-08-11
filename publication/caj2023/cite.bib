@@ -1,0 +1,13 @@
+@article{LIU202373,
+title = {Snowed autoencoders are efficient snow removers},
+journal = {Computers & Graphics},
+volume = {114},
+pages = {73-85},
+year = {2023},
+issn = {0097-8493},
+doi = {https://doi.org/10.1016/j.cag.2023.05.017},
+url = {https://www.sciencedirect.com/science/article/pii/S0097849323000729},
+author = {Yifan Liu and Jincai Chen and Ping Lu and Chuanbo Zhu and Yugen Jian and Chao Sun and Han Liang},
+keywords = {Single image snow removal, Masked autoencoder, Vision transformer},
+abstract = {Snow is a harsh natural phenomenon that greatly affects the performance of advanced computer vision tasks. Recently, most image desnowing methods rely on complex model structures, leading to increased carbon emissions and impossibilities to deploy on lightweight computing devices. Additionally, most deep learning-based methods do not effectively utilize the position information of snow particles, which will limit the performance of the model. To address these issues, considering that snow particles have block-shaped shape distribution and color uniformity similar to a mask, we propose a snowed autoencoder (SAE) desnowing method. Specifically, the SAE is composed of four parts: snowed masking process, SAE encoder, SAE decoder, and prediction stage. First, a snowy image is passed through the snowed masking process to generate a mask that exactly covers the snow particles and output the coordinates of the four vertices of the mask and the index of each segmented image patch. The input image and each mask coordinate and index are passed through the SAE encoder based on the snow particle attention module to generate an image representation for identifying typical features of snow particles. Then, the generated typical features of snow particles are fed into the SAE decoder to reconstruct image patches without snow. Finally, all the patches will be passed through the prediction stage to reconstruct the original size of the snow-free image. A large number of experiments show that the proposed SAE desnowing method achieves the state-of-the-art desnowing performance on three synthetic and one real-world desnowing datasets. The images after desnowing by SAE have better color details and are more consistent with human visual habits. In addition, SAE has faster desnowing speed and fewer parameters. The code is available at https://github.com/awhitewhale/SAE.}
+}

@@ -1,0 +1,3 @@
+User-agent: *
+
+Sitemap: https://2oil.top/sitemap.xml
